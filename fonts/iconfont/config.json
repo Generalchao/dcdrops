@@ -1,0 +1,50 @@
+{
+  "name": "activity",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "5de9370846a26947e03f63142a3f1c07",
+      "css": "angle-up",
+      "code": 61702,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e4dde1992f787163e2e2b534b8c8067d",
+      "css": "angle-down",
+      "code": 61703,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3dcd9ad102b537b0812da8c60d7d7af2",
+      "css": "video",
+      "code": 59393,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M816 126H184C120 126 68 178 68 240V760C68 824 120 876 184 876H818C882 876 934 824 934 760V240C932 178 880 126 816 126ZM688 526L400 698C394 702 390 702 384 702S374 700 370 698C362 692 356 684 356 674V328C356 318 362 310 370 304 378 298 390 298 400 304L688 476C696 482 702 490 702 500S698 520 688 526Z",
+        "width": 1000
+      },
+      "search": [
+        "video"
+      ]
+    },
+    {
+      "uid": "5254489d4d101cde5010d7188b5a6b12",
+      "css": "demo",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M160 90C160 40 200 0 250 0H750C800 0 840 40 840 90V908C840 958 800 998 750 998H250C200 1000 160 960 160 910V90ZM500 954C538 954 568 924 568 886 568 848 538 818 500 818 462 818 432 848 432 886 432 924 462 954 500 954Z",
+        "width": 1000
+      },
+      "search": [
+        "demo"
+      ]
+    }
+  ]
+}
