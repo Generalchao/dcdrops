@@ -319,7 +319,7 @@ article{position: relative; float: left; width: 100%;}
 }
 
 /*background*/
-.bg{position:absolute; left:0px; top:0px; width:100%; height:100%; overflow:hidden; background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment:scroll;}
+.bg{position:absolute; left:0px; top:0px; width:100%; height:100%; overflow:hidden; background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment:scroll;background-image:url(../img/bg-universe.svg),linear-gradient(#111315, #282d33);}
 .bg.fix{background-attachment: fixed;}
 .bg-row{background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment:scroll;}
 .bg-layer-40{position:absolute; left:0px; top:0px; width:100%; height:100%;/*background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);*/background-image: linear-gradient(-135deg, #4fc4f9, #6a48f4 51.26%, #ec3a4a);}
@@ -1058,8 +1058,6 @@ _:-ms-fullscreen, :root .quote .quote-nav.active{opacity: 1;}
 .bg-dark {background: #222;}
 
 .bg-img-1 {background-image: url(../img/bg-1.jpg);}
-.bg-img-2 {background-image: url(../img/bg-2.jpg);}
-.bg-img-6 {background-image: url(../img/bg-3.jpg);}
 
 .bg-img-7 {background-image: url(../img/related_post_1.jpg);}
 .bg-img-8 {background-image: url(../img/related_post_2.jpg);}
