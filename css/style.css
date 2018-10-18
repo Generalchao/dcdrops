@@ -1,4 +1,4 @@
-@import "../fonts/iconfont/css/activity.css";
+@import "../fonts/iconfont/css/fontello.css";
 @import "../fonts/iconfont/css/animation.css";
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /*This is main CSS file that contains custom style rules used in this template*/
@@ -1232,6 +1232,12 @@ transition: transform .8s ease-out;
 .title_bar .work-details-box-wrap .right a{padding: 0 15px;font-size: 12px;color: #444;border: 1px solid #bbb;border-radius: 4px;display: inline-block;line-height: 28px;position: relative;}
 .title_bar .work-details-box-wrap .right a:last-child{margin-left: 10px;}
 .title_bar .work-details-box-wrap .right a:hover{color: #fff;border-color: #000;background-color: #000;}
+
+
+.bottom_link_btn{display: block;}
+.bottom_link_btn a{width: 40px;height: 40px;background-color: #f3f3f3;color: #ccc;font-size: 26px; border-radius: 100%;display: inline-block;line-height: 40px;margin: 10px 8px;overflow: hidden;transition: .5s;}
+.bottom_link_btn a:hover{transform: scale(1.1);color: #979797;}
+
 
 
 

@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'activity';
-  src: url('../font/activity.eot?32964112');
-  src: url('../font/activity.eot?32964112#iefix') format('embedded-opentype'),
-       url('../font/activity.woff2?32964112') format('woff2'),
-       url('../font/activity.woff?32964112') format('woff'),
-       url('../font/activity.ttf?32964112') format('truetype'),
-       url('../font/activity.svg?32964112#activity') format('svg');
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?62750515');
+  src: url('../font/fontello.eot?62750515#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?62750515') format('woff2'),
+       url('../font/fontello.woff?62750515') format('woff'),
+       url('../font/fontello.ttf?62750515') format('truetype'),
+       url('../font/fontello.svg?62750515#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,14 +14,14 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'activity';
-    src: url('../font/activity.svg?32964112#activity') format('svg');
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?62750515#fontello') format('svg');
   }
 }
 */
  
  [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "activity";
+  font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -57,5 +57,8 @@
  
 .icon-demo:before { content: '\e800'; } /* '' */
 .icon-video:before { content: '\e801'; } /* '' */
+.icon-github:before { content: '\e804'; } /* '' */
+.icon-uichina:before { content: '\e805'; } /* '' */
+.icon-zhanku:before { content: '\e806'; } /* '' */
 .icon-angle-up:before { content: '\f106'; } /* '' */
 .icon-angle-down:before { content: '\f107'; } /* '' */
