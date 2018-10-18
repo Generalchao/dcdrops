@@ -500,7 +500,7 @@ $(window).scrollStopped(function(){
     
     
     /*menu click*/
-    $('nav ul li a, .btn-2, footer p a').on('click',function(event){
+    $('nav ul li a, .btn-2, .bottom_link_btn a').on('click',function(event){
       if ($(this).attr('data-anchor').length) {
             event.preventDefault();
             var anchor = $(this).data('anchor');

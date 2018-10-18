@@ -1,8 +1,8 @@
 
 .icon-demo:before { content: '\e800'; } /* '' */
-.icon-video:before { content: '\e801'; } /* '' */
-.icon-github:before { content: '\e804'; } /* '' */
-.icon-uichina:before { content: '\e805'; } /* '' */
+.icon-github:before { content: '\e801'; } /* '' */
+.icon-logo:before { content: '\e802'; } /* '' */
+.icon-top:before { content: '\e803'; } /* '' */
+.icon-uichina:before { content: '\e804'; } /* '' */
+.icon-video:before { content: '\e805'; } /* '' */
 .icon-zhanku:before { content: '\e806'; } /* '' */
-.icon-angle-up:before { content: '\f106'; } /* '' */
-.icon-angle-down:before { content: '\f107'; } /* '' */
