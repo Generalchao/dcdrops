@@ -412,7 +412,7 @@ article{position: relative; float: left; width: 100%;}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 07 - HEADER */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-header{position: absolute; left: 20px;right: 20px; bottom: -80vh;border-radius: 14px; height: 80vh; background-color: rgba(255,255,255,.69); text-align: center; z-index: 50;box-shadow: 0 5px 20px rgba(0,0,0,.05)}
+header{position: absolute; left: 20px;right: 20px; bottom: -80vh;border-radius: 14px; height: 80vh; background-color: rgba(255,255,255,1); text-align: center; z-index: 50;box-shadow: 0 5px 20px rgba(0,0,0,.05)}
 header *{backface-visibility: hidden;}
 header.fixed{position: fixed;}
 header nav ul li{position: relative; width: 100%; height: 50px; line-height: 50px; vertical-align: middle; font-size: 12px; font-weight: 700; text-align: center; cursor: pointer;}
@@ -424,7 +424,7 @@ header .follow-style-3{background: transparent; padding: 0; font-size: 12px; hei
 header .header-content > ul li a{color: rgba(255,255,255,0.7);}
 
 header .hamburger-icon-3{position: fixed; top: 20px; left: 20px; width: 50px; height: 50px;border-radius: 10px; cursor: pointer; display: none;transition: right 1s,background-color 1s,transform .5s ease-out;}
-header .hamburger-icon-3.menu_bg{background-color: rgba(0, 0, 0, 0.64);-webkit-backdrop-filter: blur(8px);backdrop-filter: blur(8px);transition: background-color 1s,right 1s,transform .5s ease-out;box-shadow: 0 5px 14px rgba(0, 0, 0, 0.22);}
+header .hamburger-icon-3.menu_bg{background-color: rgba(0, 0, 0, 0.64);transition: background-color 1s,right 1s,transform .5s ease-out;box-shadow: 0 5px 14px rgba(0, 0, 0, 0.22);}
 header .hamburger-icon-3.active{background-color: #000;}
 
 header .hamburger-icon-3 span{position: absolute; left: 16px; width: 18px; height: 2px; background-color: #fff; -moz-transition:all 150ms ease-out; -o-transition:all 150ms ease-out; -webkit-transition:all 150ms ease-out; transition:all 150ms ease-out; -ms-transition:all 150ms ease-out;}
@@ -445,8 +445,7 @@ header .header-content{height: 100%; width: 100%; overflow: auto; overflow-x: hi
   header > ul li{margin-bottom: 5px;}
 }
 @media (max-width: 1199px) {
-  header.active{position: fixed; bottom: 20px;-webkit-backdrop-filter: blur(8px);
-backdrop-filter: blur(8px);}
+  header.active{position: fixed; bottom: 20px;}
   header .hamburger-icon-3{display: block;}
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
