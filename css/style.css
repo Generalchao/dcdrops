@@ -1,5 +1,6 @@
 @import "../fonts/iconfont/css/fontello.css";
 @import "../fonts/iconfont/css/animation.css";
+:root{--main-color:#fd39c2;}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /*This is main CSS file that contains custom style rules used in this template*/
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -171,6 +172,7 @@ ul, ol{list-style-type: none;}
 .small{font-size: 13px; line-height: 32px;}
 .small-sm{font-size: 13px; line-height: 24px;}
 .small-sm p font{color: #000;}
+.small-sm i{color: var(--main-color);font-size: 50px;}
 
 
 @media (max-width: 1024px) {
