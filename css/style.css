@@ -412,7 +412,8 @@ article{position: relative; float: left; width: 100%;}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 07 - HEADER */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-header{position: fixed; left: 20px;right: 20px; bottom: -500px;border-radius: 14px; background-color: rgba(255,255,255,1); text-align: center; z-index: 50;box-shadow: 0 5px 20px rgba(0,0,0,.05)}
+header{position: fixed; left: 0;right: 0; bottom: 0;top: 0; background-color: rgba(0,0,0,0); text-align: center; z-index: 50;}
+header.active{background-color: rgba(0,0,0,.6);}
 header *{backface-visibility: hidden;}
 header.fixed{position: fixed;}
 header nav ul li{position: relative; width: 100%; height: 50px; line-height: 50px; vertical-align: middle; font-size: 12px; font-weight: 700; text-align: center; cursor: pointer;}
@@ -424,7 +425,7 @@ header .follow-style-3{background: transparent; padding: 0; font-size: 12px; hei
 header .header-content > ul li a{color: rgba(255,255,255,0.7);}
 
 header .hamburger-icon-3{position: fixed; top: 20px; left: 20px; width: 50px; height: 50px;border-radius: 10px; cursor: pointer; display: none;transition: right 1s,background-color 1s,transform .5s ease-out;}
-header .hamburger-icon-3.menu_bg{background-color: rgba(0, 0, 0, 0.64);transition: background-color 1s,right 1s,transform .5s ease-out;box-shadow: 0 5px 14px rgba(0, 0, 0, 0.22);}
+header .hamburger-icon-3.menu_bg{background-color: rgba(0, 0, 0, 0.64);transition: background-color 1s,right 1s,transform .5s ease-out;}
 header .hamburger-icon-3.active{background-color: #000;}
 
 header .hamburger-icon-3 span{position: absolute; left: 16px; width: 18px; height: 2px; background-color: #fff; -moz-transition:all 150ms ease-out; -o-transition:all 150ms ease-out; -webkit-transition:all 150ms ease-out; transition:all 150ms ease-out; -ms-transition:all 150ms ease-out;}
@@ -445,7 +446,6 @@ header .header-content{height: 100%; width: 100%; overflow: auto; overflow-x: hi
   header > ul li{margin-bottom: 5px;}
 }
 @media (max-width: 1199px) {
-  header.active{bottom: 20px;}
   header .hamburger-icon-3{display: block;}
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -1218,9 +1218,9 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .bottom_link_btn a{width: 40px;height: 40px;background-color: #f3f3f3;color: #ccc;font-size: 26px; border-radius: 100%;display: inline-block;line-height: 40px;margin: 10px 8px;overflow: hidden;transition: .5s;}
 .bottom_link_btn a:hover{transform: scale(1.1);color: #979797;}
 .bottom_link_btn .back-top{position: absolute;right: 10px;color:#979797; }
-.icon-logo{font-size: 30px;position: absolute;top: 14px;left: calc(50% - 15px);color: #000;}
-.scroll-nav{margin: 80px 15px 0;}
-
+.icon-logo{font-size: 30px;position: absolute;top: 24px;left: calc(50% - 15px);color: #000;}
+.scroll-nav{padding: 80px 30px 20px;background-color: #fff;border-radius: 14px;box-shadow: 0 5px 20px rgba(0,0,0,.05);position: absolute;bottom:-500px;left: 20px;right: 20px;transition: .5s;}
+header.active .scroll-nav{bottom: 20px;}
 #skill,#work{background:#000 url(../img/bg-rectangle.png);background-size: cover;}
 #portfolio{background:#222;}
 
