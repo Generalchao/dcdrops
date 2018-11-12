@@ -650,16 +650,15 @@ transform: translate(0%, -50%);}
 /*PRICE*/
 .price-wrapper{text-align: center;overflow: hidden;margin-bottom: 20px;}
 .price-wrapper .price-icon{position: relative; display: block; width: 80px; height: 80px; margin: 0 auto; background-color: #fff; border-radius: 50%; box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.07); margin-bottom: -45px; z-index: 1;}
-.price-wrapper .price-icon img{width: 30px; position: absolute; left: 50%; top: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .price-wrapper .price-icon:before{content: ""; position: absolute; left: 50%; bottom: -30px; width: 1px; height: 30px; background-color: #e3e3e3; z-index: 1}
+.price-wrapper .price-icon i{font-size: 30px;position: absolute; left: 50%; top: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: gray;opacity: .7;}
 .price-wrapper article{background-color: #fff; padding: 115px 45px 75px 45px;}
 .price{font-size: 42px; line-height: 42px; font-weight: 700;  color: #222;}
 .price sup{font-size: 24px;}
 .price-wrapper ul li{margin-bottom: 8px;}
 .price-wrapper ul li:last-child{margin-bottom: 0;}
 .price-wrapper ul li span{ color: #fd39c2; font-weight: 600;}
-.price-wrapper .btn-2{height: 50px; line-height: 50px; font-size: 12px; top: -20px;}
-.price-wrapper .btn-2:before{border: 1px solid #fd39c2;}
+
 @media (min-width: 1200px) {
   .price-wrapper .price-icon:hover:before{background-color: #fd39c2;}
 }
