@@ -138,9 +138,9 @@ ul, ol{list-style-type: none;}
 
 /*buttons*/
 .btn-wrap{position: relative; float: left; display: block; width: 100%;}
-.btn-2{box-sizing: border-box; position: relative; display: inline-block; height: 60px; line-height: 54px; padding: 0 60px; background:none; color: #fff; font-size: 15px;  cursor: pointer;border: 3px solid rgba(255,255,255,.2)
+.btn-2{box-sizing: border-box; position: relative; display: inline-block; height: 60px; line-height: 54px; padding: 0 40px; background:none; color: #fff; font-size: 16px;  cursor: pointer;border: 3px solid rgba(255,255,255,.2)
 ;}
-.btn-2:nth-of-type(2){/*padding: 0 10px;*/margin-left: 20px;}
+.btn-2:nth-of-type(2){/*padding: 0 10px;*/margin-left: 10px;}
 .btn-2 span{z-index: 2; position: relative; color: #fff; cursor: pointer;}
 .btn-2:before{content: ""; position: absolute; left: 0px; top: 0px; right: 0px;bottom: 0px;background: #fff; opacity: 0; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0);}
 .btn-2:hover span{color: var(--main-color);}
