@@ -518,8 +518,8 @@ $(window).scrollStopped(function(){
         $('nav ul li:eq(2)').addClass('active');
     });
 
-    //hamburger-icon-3
-    $('.hamburger-icon-3').on('click', function(){
+    //hamburger-icon-3展开菜单
+    $('.hamburger-icon-3, .mask').on('click', function(){
         if ($(this).hasClass('active')) {
             $(this).removeClass('active').addClass('default');
             headerVal.removeClass('active');
