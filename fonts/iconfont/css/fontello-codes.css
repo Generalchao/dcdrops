@@ -6,7 +6,14 @@
 .icon-uichina:before { content: '\e804'; } /* '' */
 .icon-video:before { content: '\e805'; } /* '' */
 .icon-zhanku:before { content: '\e806'; } /* '' */
+.icon-home:before { content: '\e807'; } /* '' */
 .icon-html:before { content: '\e808'; } /* '' */
 .icon-pc-phone:before { content: '\e809'; } /* '' */
 .icon-eye:before { content: '\e80a'; } /* '' */
 .icon-phone:before { content: '\e80b'; } /* '' */
+.icon-pen:before { content: '\e80c'; } /* '' */
+.icon-briefcase-1:before { content: '\e80d'; } /* '' */
+.icon-thumbs-up:before { content: '\e80e'; } /* '' */
+.icon-coverflow:before { content: '\f00c'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-gg-circle:before { content: '\f261'; } /* '' */

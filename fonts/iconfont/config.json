@@ -159,6 +159,48 @@
       "search": [
         "phone"
       ]
+    },
+    {
+      "uid": "994cebef2d88a25f775b1b2b318f71c7",
+      "css": "gg-circle",
+      "code": 62049,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8e50efd23ddcb26f05878476c2c1ce8f",
+      "css": "pen",
+      "code": 59404,
+      "src": "typicons"
+    },
+    {
+      "uid": "0464d6f35a7fe587434173f42ddace88",
+      "css": "thumbs-up",
+      "code": 59406,
+      "src": "elusive"
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "code": 61664,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d3fa106db96ff869d1ad75506ba5ff50",
+      "css": "coverflow",
+      "code": 61452,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "9ea7cce5e08e5ac2c225fabf2e6dc353",
+      "css": "briefcase-1",
+      "code": 59405,
+      "src": "entypo"
+    },
+    {
+      "uid": "018571e697f22ca41803de480e10ed10",
+      "css": "home",
+      "code": 59399,
+      "src": "mfglabs"
     }
   ]
 }
