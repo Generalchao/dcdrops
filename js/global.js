@@ -519,13 +519,15 @@ $(window).scrollStopped(function(){
     });
 
     //hamburger-icon-3展开菜单
-    $('.hamburger-icon-3, .mask').on('click', function(){
+    $('.hamburger-icon-3').on('click', function(){
         if ($(this).hasClass('active')) {
             $(this).removeClass('active').addClass('default');
             headerVal.removeClass('active');
+            $('.mask').fadeOut();
         } else {
                 $(this).addClass('active').removeClass('default');
                 headerVal.addClass('active');
+                $('.mask').fadeIn();
                 }
     });
 
