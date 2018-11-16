@@ -507,6 +507,7 @@ $(window).scrollStopped(function(){
             $('nav ul li a').parent().removeClass('active');
             $('header').removeClass('active');
             $('.hamburger-icon-3').removeClass('active');
+            $('.mask').fadeOut();
             $(this).parent().addClass('active');
             $('html, body').animate({scrollTop:$('#'+anchor).offset().top}, 1000);
        }
