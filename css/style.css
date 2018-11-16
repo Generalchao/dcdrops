@@ -452,8 +452,7 @@ header .hamburger-icon-3.active span:nth-child(3){-ms-transform: rotate(-45deg) 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 08 - FOOTER */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-footer{padding: 15px 0 50px;font-weight: 900; font-size: 12px; line-height: 30px;text-align: center;color: #333;margin-top: 60px;position: relative;}
-footer:before{position: absolute;content: '';right: 15px; height: 1px;left: 15px; top: 0;background-color: #c8c7cc;transform: scaleY(.5);}
+footer{padding: 30px 0 70px;font-weight: 900; font-size: 12px; line-height: 30px;text-align: center;color: #333;margin-top: 60px;position: relative;background-color: #f8f8fb;}
 footer ul{list-style-type: none;}
 footer ul li{margin-bottom: 5px;}
 footer ul li a{color: #989898}
@@ -1216,7 +1215,7 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 
 
 .bottom_link_btn{display: block;position: relative;}
-.bottom_link_btn a{width: 40px;height: 40px;background-color: #f3f3f3;color: #ccc;font-size: 26px; border-radius: 100%;display: inline-block;line-height: 40px;margin: 10px 8px;overflow: hidden;transition: .5s;}
+.bottom_link_btn a{width: 44px;height: 44px;background-color: #fff;color: #ccc;font-size: 26px; border-radius: 100%;display: inline-block;line-height: 44px;margin: 10px 8px;overflow: hidden;transition: .5s;box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.02);}
 .bottom_link_btn a:hover{transform: scale(1.1);color: #979797;}
 .bottom_link_btn .back-top{position: absolute;right: 10px;color:#979797; }
 .icon-logo{font-size: 30px;position: absolute;top: 30px;left: calc(50% - 15px);color: #000;}
