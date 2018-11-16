@@ -1214,6 +1214,7 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 header.active .scroll-nav{bottom: 20px;}
 #skill,#work{background:#000 url(../img/bg-rectangle.png);background-size: cover;}
 #portfolio{background:#222;}
+.icon-email,.icon-call{color: var(--main-color);font-size: 40px;}
 
 
 
