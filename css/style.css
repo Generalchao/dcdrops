@@ -145,14 +145,6 @@ ul, ol{list-style-type: none;}
 .btn-2:before{content: ""; position: absolute; left: 0px; top: 0px; right: 0px;bottom: 0px;background: #fff; opacity: 0; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0);}
 .btn-2:hover span{color: var(--main-color);}
 .btn-2:hover:before{opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1);}
-
-.hamburger-icon-2{width: 40px; height: 44px; position: relative; display: inline-block; cursor: pointer; margin-right: -10px; margin-top: -4px;}
-.hamburger-icon-2 span{background-color: #222; height: 2px; width: 18px; position: absolute; left: 11px;}
-.hamburger-icon-2 span:nth-child(1){bottom: 27px;}
-.hamburger-icon-2 span:nth-child(2){bottom: 21px;}
-.hamburger-icon-2 span:nth-child(3){bottom: 15px;}
-.hamburger-icon-2:hover span:nth-child(1){bottom: 29px;}
-.hamburger-icon-2:hover span:nth-child(3){bottom: 13px;}
 /*buttons*/
 
 
@@ -425,7 +417,7 @@ header nav ul li a span{font-size: 12px;display: block;line-height: 12px;margin-
 header .follow-style-3{background: transparent; padding: 0; font-size: 12px; height: 30px; line-height: 30px;}
 header .header-content > ul li a{color: rgba(255,255,255,0.7);}
 
-header .hamburger-icon-3{position: fixed; top: 20px; left: 20px; width: 50px; height: 50px;border-radius: 10px; cursor: pointer; display: none;transition: right 1s,background-color 1s,transform .5s ease-out;z-index: 1000;}
+header .hamburger-icon-3{position: fixed; top: 20px; left: 20px; width: 50px; height: 50px;border-radius: 10px; cursor: pointer;transition: right 1s,background-color 1s,transform .5s ease-out;z-index: 1000;}
 header .hamburger-icon-3.menu_bg{background-color: rgba(0, 0, 0, 0.64);transition: background-color 1s,right 1s,transform .5s ease-out;}
 header .hamburger-icon-3.active{background-color: #000;}
 
@@ -437,16 +429,13 @@ header .hamburger-icon-3.active{right: 0;transition: right 1s,background-color 1
 header .hamburger-icon-3.active span:nth-child(1){-ms-transform: rotate(45deg) translateX(4px) translateY(4px); -webkit-transform: rotate(45deg) translateX(4px) translateY(4px); transform: rotate(45deg) translateX(4px) translateY(4px);}
 header .hamburger-icon-3.active span:nth-child(2){opacity: 0;}
 header .hamburger-icon-3.active span:nth-child(3){-ms-transform: rotate(-45deg) translateX(4px) translateY(-5px); -webkit-transform: rotate(-45deg) translateX(4px) translateY(-5px); transform: rotate(-45deg) translateX(4px) translateY(-5px);}
-
+@media(min-width: 415px){
+  .scroll-nav{left: calc(50vw - 190px)}
+}
 @media (min-width: 1200px) {
-  nav ul li:hover a{color: #fff;}
-  nav ul li:hover:before{-ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1);}
   header .follow-style-3 a:hover{color: #000;}
   header > ul li a:hover{color: #fff;}
   header > ul li{margin-bottom: 5px;}
-}
-@media (max-width: 1199px) {
-  header .hamburger-icon-3{display: block;}
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 08 - FOOTER */
@@ -1210,8 +1199,8 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .bottom_link_btn a:hover{transform: scale(1.1);color: #979797;}
 .bottom_link_btn .back-top{position: absolute;right: 10px;color:#979797; }
 .icon-logo{font-size: 30px;position: absolute;top: 30px;left: calc(50% - 15px);color: #000;}
-.scroll-nav{padding: 90px 30px 30px;background-color: #fff;border-radius: 14px;box-shadow: 0 5px 20px rgba(0,0,0,.05);position: fixed;bottom:-500px;left: 20px;right: 20px;transition: .5s;z-index: 1000;}
-header.active .scroll-nav{bottom: 20px;}
+.scroll-nav{padding: 90px 20px 20px;background-color: #fff;border-radius: 10px;box-shadow: 0 5px 20px rgba(0,0,0,.05);position: fixed;bottom:-500px;left: 10px;right: 10px;transition: .5s;z-index: 1000;max-width: 400px;}
+header.active .scroll-nav{bottom: 10px;}
 #skill,#work{background:#000 url(../img/bg-rectangle.png);background-size: cover;}
 #portfolio{background:#222;}
 .icon-email,.icon-call{color: var(--main-color);font-size: 40px;}
