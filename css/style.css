@@ -659,17 +659,6 @@ transform: translate(0%, -50%);}
 }
 /*TEAM*/
 
-/*CONTACT*/
-.contact a{font-size: 13px; line-height: 24px; color: #989898;}
-@media (min-width: 1200px) {
-  .contact a:hover{color: #fd39c2;}
-}
-@media (max-width: 767px) {
-  .contact article img{margin-top: 25px;}
-  .contact .col-md-4:first-child article img{margin-top: 0px;}
-}
-/*CONTACT*/
-
 /*INSTAGRAM*/
 .swiper-instagram *{backface-visibility: hidden;}
 .swiper-instagram .swiper-container{padding: 0 30px;}
@@ -1200,6 +1189,8 @@ header.active .scroll-nav{bottom: 10px;}
 #skill,#work{background:#000 url(../img/bg-rectangle.png);background-size: cover;}
 #portfolio{background:#222;}
 .icon-email,.icon-call{color: var(--main-color);font-size: 40px;}
+.contact img{width: 50px;}
+.contact a{color: #333;}
 
 
 
