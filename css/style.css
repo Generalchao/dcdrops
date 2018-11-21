@@ -1189,7 +1189,7 @@ header.active .scroll-nav{bottom: 10px;}
 #skill,#work{background:#000 url(../img/bg-rectangle.png);background-size: cover;}
 #portfolio{background:#222;}
 .icon-email,.icon-call{color: var(--main-color);font-size: 40px;}
-.contact img{width: 50px;}
+.contact img{width: 50px;margin-top: 20px;}
 .contact a{color: #333;}
 
 
