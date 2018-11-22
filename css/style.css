@@ -1,40 +1,8 @@
 @import "../fonts/iconfont/css/fontello.css";
 @import "../fonts/iconfont/css/animation.css";
 :root{--main-color:#fd39c2;}
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/*This is main CSS file that contains custom style rules used in this template*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* Template Name: Vevo*/
-/* Version: 1.0 Initial Release*/
-/* Build Date: 27-09-2016*/
-/* Author: Unbranded*/
-/* Website: 
-/* Copyright: (C) 2016 */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-
-/*--------------------------------------------------------*/
-/* TABLE OF CONTENTS: */
-/*--------------------------------------------------------*/
-/* 01 - FONTS */
-/* 02 - LOADER */
-/* 03 - RESET STYLES */
-/* 04 - GLOBAL SETTINGS */
-/* 05 - HEADER */
-/* 06 - FOOTER */
-
-
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-
-
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* 01 - FONTS */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
 .class{font-family: 'Raleway', sans-serif;}
 i:brfore{margin:0!important;}
-
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* 03 - RESET STYLES */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
 i{font-style: italic;}
 /* HTML5 display-role reset for older browsers */
@@ -50,14 +18,6 @@ body{font-family:'Raleway','PingFang SC', sans-serif; font-weight: 400; font-siz
 body:not(.loaded) *{-webkit-transition: none !important; transition: none !important;}
 ul, ol{list-style-type: none;}
 .container{max-width: 100%;}
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* 04 - GLOBAL SETTINGS */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-.is-mobile{display: none;}
-@media (max-width: 1199px) {
-    .is-mobile{display: block;}
-}
-
 #content{overflow-x: hidden;}
 
 /*table*/
@@ -425,8 +385,11 @@ header .hamburger-icon-3.active{right: 0;transition: right 1s,background-color 1
 header .hamburger-icon-3.active span:nth-child(1){-ms-transform: rotate(45deg) translateX(4px) translateY(4px); -webkit-transform: rotate(45deg) translateX(4px) translateY(4px); transform: rotate(45deg) translateX(4px) translateY(4px);}
 header .hamburger-icon-3.active span:nth-child(2){opacity: 0;}
 header .hamburger-icon-3.active span:nth-child(3){-ms-transform: rotate(-45deg) translateX(4px) translateY(-5px); -webkit-transform: rotate(-45deg) translateX(4px) translateY(-5px); transform: rotate(-45deg) translateX(4px) translateY(-5px);}
+.scroll-nav{padding: 90px 20px 20px;background-color: #fff;border-radius: 10px;box-shadow: 0 5px 20px rgba(0,0,0,.05);position: fixed;bottom:-500px;left: 10px;right: 10px;transition: .5s;z-index: 1000;max-width: 400px;}
+header.active .scroll-nav{bottom: 10px;}
 @media(min-width: 415px){
-  .scroll-nav{left: calc(50vw - 190px)}
+  .scroll-nav{left: calc(50vw - 190px);}
+  header.active .scroll-nav{bottom: 30px;}
 }
 @media (min-width: 1200px) {
   header .follow-style-3 a:hover{color: #000;}
@@ -1184,8 +1147,6 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .bottom_link_btn a:hover{transform: scale(1.1);color: #979797;}
 .bottom_link_btn .back-top{position: absolute;right: 10px;color:#979797; }
 .icon-logo{font-size: 30px;position: absolute;top: 30px;left: calc(50% - 15px);color: #000;}
-.scroll-nav{padding: 90px 20px 20px;background-color: #fff;border-radius: 10px;box-shadow: 0 5px 20px rgba(0,0,0,.05);position: fixed;bottom:-500px;left: 10px;right: 10px;transition: .5s;z-index: 1000;max-width: 400px;}
-header.active .scroll-nav{bottom: 10px;}
 #skill,#work{background:#000 url(../img/bg-rectangle.png);background-size: cover;}
 #portfolio{background:#222;}
 .icon-email,.icon-call{color: var(--main-color);font-size: 40px;}
