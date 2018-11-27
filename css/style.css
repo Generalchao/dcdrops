@@ -18,7 +18,7 @@ body{font-family:'Raleway','PingFang SC', sans-serif; font-weight: 400; font-siz
 body:not(.loaded) *{-webkit-transition: none !important; transition: none !important;}
 ul, ol{list-style-type: none;}
 .container{max-width: 100%;}
-#content{overflow-x: hidden;}
+#content{overflow-x: hidden;transition: .5s;transform:perspective(500px)  translate3d(0,0,0);}
 
 /*table*/
 .table-view{height: 100%; width: 100%; display: table;}
