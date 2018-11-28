@@ -530,7 +530,7 @@ $(window).scrollStopped(function(){
                 $(this).addClass('active').removeClass('default');
                 headerVal.addClass('active');
                 $('.mask').fadeIn();
-                $('#content').css("transform","perspective(500px) translate3d(0,-140px,-20px)");
+                $('#content').css("transform","perspective(500px) translate3d(0,0,-20px)");
                 }
     });
 
@@ -663,3 +663,18 @@ $(window).scrollStopped(function(){
 
       new_scroll_position = last_scroll_position;
     });
+
+//百度统计
+    var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?4921c9070414a1574f5617b5848e9ce8";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+
+
+
+
+
+        
