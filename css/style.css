@@ -386,7 +386,7 @@ header .hamburger-icon-3.active span:nth-child(1){-ms-transform: rotate(45deg) t
 header .hamburger-icon-3.active span:nth-child(2){opacity: 0;}
 header .hamburger-icon-3.active span:nth-child(3){-ms-transform: rotate(-45deg) translateX(4px) translateY(-5px); -webkit-transform: rotate(-45deg) translateX(4px) translateY(-5px); transform: rotate(-45deg) translateX(4px) translateY(-5px);}
 .scroll-nav{padding: 90px 20px 20px;background-color: #fff;border-radius: 10px 10px 0 0;box-shadow: 0 5px 20px rgba(0,0,0,.05);position: fixed;bottom:-100%;left: 0;right: 0;transition: .5s;z-index: 1000;max-width: 800px;height: 94vh;}
-.scroll-nav .icon-arrow-down{font-size: 40px;color: #e1e1e1;}
+.scroll-nav .icon-arrow-down{font-size: 40px;color: #e1e1e1;position: absolute;left: calc(50% - 20px);bottom: 20px;}
 header.active .scroll-nav{bottom: 0;}
 @media(min-width: 415px){
   .scroll-nav{left: calc(50vw - 190px);}
