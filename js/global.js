@@ -525,12 +525,12 @@ $(window).scrollStopped(function(){
             $(this).removeClass('active').addClass('default');
             headerVal.removeClass('active');
             $('.mask').fadeOut();
-            $('#content').css("transform","perspective(500px) translate3d(0,0,0)");
+            // $('#content').css("transform","perspective(500px) translate3d(0,0,0)");
         } else {
                 $(this).addClass('active').removeClass('default');
                 headerVal.addClass('active');
                 $('.mask').fadeIn();
-                $('#content').css("transform","perspective(500px) translate3d(0,0,-20px)");
+                // $('#content').css("transform","perspective(500px) translate3d(0,0,-20px)");
                 }
     });
 
