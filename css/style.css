@@ -1,11 +1,9 @@
 @import "../fonts/iconfont/css/fontello.css";
 @import "../fonts/iconfont/css/animation.css";
 :root{--main-color:#fd39c2;}
-.class{font-family: 'Raleway', sans-serif;}
 i:brfore{margin:0!important;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
 i{font-style: italic;}
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
@@ -14,7 +12,9 @@ body *{-webkit-text-size-adjust:none;}
 input:focus, select:focus, textarea:focus, button:focus {outline: none;}
 input, textarea, select{-webkit-appearance: none; border-radius: 0;}
 a, a:link, a:visited, a:active, a:hover{cursor: pointer; text-decoration: none; outline: none;}
-body{font-family:'Raleway','PingFang SC', sans-serif; font-weight: 400; font-size: 15px; line-height: 24px; color: #989898;}
+/*body{font-family:'Raleway','PingFang SC', sans-serif; font-weight: 400; font-size: 15px; line-height: 24px; color: #989898;}*/
+body{font-family:'Telefon Black', 'PingFang SC', sans-serif; font-weight: 400; font-size: 15px; line-height: 24px; color: #989898;}
+
 body:not(.loaded) *{-webkit-transition: none !important; transition: none !important;}
 ul, ol{list-style-type: none;}
 .container{max-width: 100%;}
@@ -32,17 +32,7 @@ ul, ol{list-style-type: none;}
 
 /*flex*/
 .flex-js{display: flex;-webkit-align-items:center; align-items:center;}
-.flex{
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  height: 100%; min-height: inherit;
-}
-
+.flex{display: -ms-flexbox;display: -webkit-flex;display: flex;-ms-flex-align: center;-webkit-align-items: center;-webkit-box-align: center;align-items: center;height: 100%; min-height: inherit;}
 .flex-order-1{order: 1;}
 .flex-order-2{order: 2;}
 .flex-eq-h{display: -ms-flexbox; display: -webkit-flex; display: flex; -ms-flex-align: stretch; -webkit-align-items: stretch; -webkit-box-align: stretch; align-items: stretch; width: 100%; height: 100%; min-height: inherit;}
@@ -437,7 +427,7 @@ footer .follow{margin-left: 10px;}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /*BANNER*/
 .swiper-style-banner{position: relative;}
-.swiper-style-banner .flex{height: 100vh; min-height: 600px;}
+.swiper-style-banner .flex{height: 90vh; min-height: 600px;}
 .swiper-style-banner .logo{position: absolute; left: calc(50% - 59px); top: calc(55px); z-index: 2;}
 .swiper-style-banner .hamburger-icon-2{position: absolute; left: 100px; top: calc(43px); z-index: 2;}
 .swiper-style-banner .hamburger-icon-2 span{background-color: #fff;}
