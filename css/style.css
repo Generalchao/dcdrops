@@ -993,7 +993,8 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .contact img{width: 50px;margin-top: 20px;}
 .contact a{color: #333;}
 
-.power.txt-right{display: none;}
+.power.txt-right, .vlink.vinput{display: none;}
+
 
 
 
