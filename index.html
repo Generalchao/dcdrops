@@ -574,8 +574,12 @@
 					<div class="empty-space h35-xs h0-md"></div>
 
 					<!-- github评论容器 -->
-					<div id="container"></div>
+					<!-- <div id="container"></div> -->
 					<!-- github评论容器 -->
+
+					<!-- Valine评论容器 -->
+					<div id="vcomments"></div>
+					<!-- Valine评论容器 -->
 
 
 				</div>
@@ -788,9 +792,23 @@
 
 		
 	</script>
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script>
+      new Valine({
+		    el: '#vcomments' ,
+		    appId: 'A2aR83iQY7pvynjoKTNSafiA-gzGzoHsz',
+		    appKey: 'VU8qOgtiRR9lng21YGV98aPv',
+		    notify:false, 
+		    verify:false, 
+		    avatar:'mm', 
+		    placeholder: 'just go go' 
+		});
+    </script>
 
-	
-	<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+
+	<!-- github评论系统 -->
+<!-- 	<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
 	<script src="https://jjeejj.github.io/js/gitment.js"></script>
 	<script>
 	var gitment = new Gitment({
@@ -803,6 +821,6 @@
 	  },
 	})
 	gitment.render('container')
-	</script>
+	</script> -->
 </body>
 </html>
