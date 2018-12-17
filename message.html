@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Discuss</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style type="text/css">
+.demo_btn{bottom: 0;top:auto; position: absolute;}
+	</style>	
+</head>
+<body class="loaded">
+	<div class="title_bar">
+		<div class="work-details-box-wrap">
+		  <div class="left">
+		    <span class="icon_img" style="background-image: url(img/pc_img/logo.jpg);"></span>
+		    <span class="title">Discuss</span>
+		  </div>
+		</div>
+	</div>
+<div class="xm_content">
+	<!-- Valine评论容器 -->
+	<div id="vcomments"></div>
+	<!-- Valine评论容器 -->
+</div>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script>
+      new Valine({
+		    el: '#vcomments' ,
+		    appId: 'A2aR83iQY7pvynjoKTNSafiA-gzGzoHsz',
+		    appKey: 'VU8qOgtiRR9lng21YGV98aPv',
+		    notify:false, 
+		    verify:false, 
+		    avatar:'mm', 
+		    placeholder: '留下点什么吧！' ,
+		    visitor: true // 阅读量统计
+		});
+    </script>
+</body>
+</html>
