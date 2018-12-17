@@ -500,13 +500,13 @@ $(window).scrollStopped(function(){
     
     
     /*menu click*/
-    $('nav ul li a, .btn-2, .bottom_link_btn a').on('click',function(event){
+    $('nav ul li a, .bottom_link_btn a').on('click',function(event){
       if ($(this).attr('data-anchor').length) {
             event.preventDefault();
             var anchor = $(this).data('anchor');
             $('nav ul li a').parent().removeClass('active');
             $('header').removeClass('active');
-            $('.hamburger-icon-3').removeClass('active');
+            $('#menu_btn').removeClass('active');
             $('.mask').fadeOut();
             $(this).parent().addClass('active');
             $('html, body').animate({scrollTop:$('#'+anchor).offset().top}, 1000);
@@ -516,11 +516,14 @@ $(window).scrollStopped(function(){
 	// 我的作品添加选中跳转
     $('.my_portfolio').on('click',function(event){
         event.preventDefault();
+        var anchor = $(this).data('anchor');
+        $('html, body').animate({scrollTop:$('#'+anchor).offset().top}, 1000);
+        $('nav ul li a').parent().removeClass('active');
         $('nav ul li:eq(2)').addClass('active');
     });
 
-    //hamburger-icon-3展开菜单
-    $('.hamburger-icon-3').on('click', function(){
+    //#menu_btn展开菜单
+    $('#menu_btn').on('click', function(){
         if ($(this).hasClass('active')) {
             $(this).removeClass('active').addClass('default');
             headerVal.removeClass('active');
@@ -532,6 +535,13 @@ $(window).scrollStopped(function(){
                 $('.mask').fadeIn();
                 // $('#content').css("transform","perspective(500px) translate3d(0,0,-20px)");
                 }
+    });
+
+    // 下箭头收起菜单
+    $('.icon-arrow-down').on('click',function(){
+            $('#menu_btn').removeClass('active').addClass('default');
+            headerVal.removeClass('active');
+            $('.mask').fadeOut();
     });
 
 
