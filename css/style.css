@@ -1000,6 +1000,10 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .power.txt-right, .vlink.vinput{display: none;}
 
 
+/*message*/
+.message_content{padding: 15px;}
+
+
 
 
 
