@@ -1001,7 +1001,7 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 
 
 /*message*/
-.message_content{background-color: #eaeaea}
+.message_content{background-color: #f1f1f1;margin: 56px auto 0;max-width: 800px;}
 .v .vlist .vcard .vcontent a{}
 .vpage{padding: 0 15px 20px;background-color: #fff;}
 .v .vpage .vmore{width: 100%;background-color: #fff;}
