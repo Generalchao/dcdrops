@@ -358,7 +358,7 @@ article{position: relative; float: left; width: 100%;}
 /* 07 - HEADER */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 header{ text-align: center;}
-header .mask{position: fixed; left: 0;right: 0; bottom: 0;top: 0; background-color: rgba(0,0,0,.7);display: none;transition:.5s;z-index: 999; }
+header .mask{position: fixed; left: 0;right: 0; bottom: 0;top: 0; background-color: rgba(0,0,0,.7);display: none;transition:.5s;z-index: 999;cursor: pointer; }
 header *{backface-visibility: hidden;}
 header nav ul li{position: relative; width: 100%;vertical-align: middle;text-align: left; }
 header nav ul li a{position: relative; color: rgba(0,0,0,0.9);padding: 15px 0; padding-left: 10%;display: block;cursor: pointer;}
@@ -382,11 +382,10 @@ header .hamburger-icon-3.active{right: 0;transition: right 1s,background-color 1
 header .hamburger-icon-3.active span:nth-child(1){-ms-transform: rotate(45deg) translateX(4px) translateY(4px); -webkit-transform: rotate(45deg) translateX(4px) translateY(4px); transform: rotate(45deg) translateX(4px) translateY(4px);}
 header .hamburger-icon-3.active span:nth-child(2){opacity: 0;}
 header .hamburger-icon-3.active span:nth-child(3){-ms-transform: rotate(-45deg) translateX(4px) translateY(-5px); -webkit-transform: rotate(-45deg) translateX(4px) translateY(-5px); transform: rotate(-45deg) translateX(4px) translateY(-5px);}
-.scroll-nav{padding: 90px 20px 20px;background-color: #fff;position: fixed;left: 0;right: 0;top:0; transition: .5s;z-index: 1000;height: 100vh;transform: translateY(100%);}
-.scroll-nav .icon-arrow-down{font-size: 40px;color: #e1e1e1;position: absolute;left: calc(50% - 20px);bottom: 40px;cursor: pointer;}
-header.active .scroll-nav{transform: translateY(0);}
+.scroll-nav{padding: 90px 20px 20px;background-color: #fff;position: fixed;left: 0;width: 80vw;max-width: 300px;top:0; transition: .5s;z-index: 1000;height: 100vh;transform: translateX(-100%);}
+header.active .scroll-nav{transform: translateX(0);}
 @media(min-width: 415px){
-  header.active .scroll-nav{transform: translateY(0);}
+  header.active .scroll-nav{transform: translateX(0);}
 }
 @media (min-width: 1200px) {
   header .follow-style-3 a:hover{color: #000;}

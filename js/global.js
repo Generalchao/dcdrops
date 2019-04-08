@@ -537,8 +537,8 @@ $(window).scrollStopped(function(){
                 }
     });
 
-    // 下箭头收起菜单
-    $('.icon-arrow-down').on('click',function(){
+    // 点遮罩收起菜单
+    $('.mask').on('click',function(){
             $('#menu_btn').removeClass('active').addClass('default');
             headerVal.removeClass('active');
             $('.mask').fadeOut();
