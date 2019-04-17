@@ -88,7 +88,7 @@ ul, ol{list-style-type: none;}
 
 /*buttons*/
 .btn-wrap{position: relative; float: left; display: block; width: 100%;}
-.button{ position: relative; display: inline-block;line-height: 44px; padding: 0 30px; background:none; color: var(--main-color); font-size: 16px;  cursor: pointer;border: 2px solid var(--main-color)
+.button{ position: relative; display: inline-block;line-height: 40px; padding: 0 40px; background:none; color: var(--main-color); font-size: 16px;  cursor: pointer;border: 2px solid var(--main-color)
 ;border-radius: 30px;box-sizing: content-box;margin-right: 10px;}
 .button__primary {background-color: var(--main-color);border-color: var(--main-color);color: #fff; }
 .button__hero{color: #fff;border-color: #fff;}
