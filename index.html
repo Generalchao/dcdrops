@@ -13,6 +13,8 @@
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700,900%7CPlayfair+Display:700%7CRaleway:300,400,500,600,700%7CTrirong:900" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Nunito:400,700" rel="stylesheet">
+<!-- 引入vue -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <title>Home</title>
 
 <style type="text/css">
@@ -32,6 +34,11 @@
 .single_modle2{width: 16px;height: 16px;background-color: #fff;display: inline-block;}
 
 </style>
+
+<script type="text/javascript">
+
+
+</script>
 
 </head>
 <body>
@@ -655,8 +662,7 @@
 <!-- content -->
 
 
-<!-- <script src="js/jquery-2.2.4.min.js"></script> -->
-<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/swiper.jquery.min.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/simple-lightbox.min.js"></script>
@@ -666,7 +672,6 @@
 <script src="js/mui.lazyload.js"></script>
 <script src="js/mui.lazyload.img.js"></script>
 	<script>
-
 
 
 		mui.init();
@@ -748,18 +753,6 @@
     });	
 
 
-      // 判断时辰
-      now = new Date(),hour = now.getHours() 
-		if(hour < 6){$('#time_box').text("凌晨好！");$('#time_box2,#time_box3').text("good day! ")} 
-		else if (hour < 9){$('#time_box').text("早上好！");$('#time_box2,#time_box3').text("good morning! ")} 
-		else if (hour < 12){$('#time_box').text("上午好！");$('#time_box2,#time_box3').text("good morning! ")} 
-		else if (hour < 14){$('#time_box').text("中午好！");$('#time_box2,#time_box3').text("good afternoon! ")} 
-		else if (hour < 17){$('#time_box').text("下午好！");$('#time_box2,#time_box3').text("good afternoon! ")} 
-		else if (hour < 19){$('#time_box').text("傍晚好！");$('#time_box2,#time_box3').text("good evening! ")} 
-		else if (hour < 22){$('#time_box').text("晚上好！");$('#time_box2,#time_box3').text("good night! ")} 
-		else {$('#time_box').text("夜里好！");$('#time_box2,#time_box3').text("it`s time to sleep! ")} 		
-
-
 
 		// 滚动到指定位置固定菜单
 
@@ -789,6 +782,16 @@
 		// }
 
 
+     // 判断时辰
+      now = new Date(),hour = now.getHours() 
+		if(hour < 6){$('#time_box').text("凌晨好！");$('#time_box2,#time_box3').text("good day! ")} 
+		else if (hour < 9){$('#time_box').text("早上好！");$('#time_box2,#time_box3').text("good morning! ")} 
+		else if (hour < 12){$('#time_box').text("上午好！");$('#time_box2,#time_box3').text("good morning! ")} 
+		else if (hour < 14){$('#time_box').text("中午好！");$('#time_box2,#time_box3').text("good afternoon! ")} 
+		else if (hour < 17){$('#time_box').text("下午好！");$('#time_box2,#time_box3').text("good afternoon! ")} 
+		else if (hour < 19){$('#time_box').text("傍晚好！");$('#time_box2,#time_box3').text("good evening! ")} 
+		else if (hour < 22){$('#time_box').text("晚上好！");$('#time_box2,#time_box3').text("good night! ")} 
+		else {$('#time_box').text("夜里好！");$('#time_box2,#time_box3').text("it`s time to sleep! ")} 		
 
 
 		
