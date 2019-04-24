@@ -47,7 +47,7 @@
 		<p>Hi，<font id="time_box"></font>作品预热中...</p>
 	</div>
 	<header>
-		<div class="hamburger-icon-3 default" id="menu_btn">
+		<div class="hamburger-menu default" id="menu_btn">
 			<span></span>
 			<span></span>
 			<span></span>
@@ -734,10 +734,10 @@
 		  	last_scroll_position = window.scrollY;
 
 		  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-			$(".hamburger-icon-3.default").removeClass("slideLeft42").addClass("slideRight42");
+			$(".hamburger-menu.default").removeClass("slideLeft42").addClass("slideRight42");
 
 		  } else if (new_scroll_position > last_scroll_position) {
-			$(".hamburger-icon-3.default").removeClass("slideRight42").addClass("slideLeft42");
+			$(".hamburger-menu.default").removeClass("slideRight42").addClass("slideLeft42");
 		  }
 
 		  	new_scroll_position = last_scroll_position;

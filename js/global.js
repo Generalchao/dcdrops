@@ -506,7 +506,7 @@ $(window).scrollStopped(function(){
             var anchor = $(this).data('anchor');
             $('nav ul li a').parent().removeClass('active');
             $('header').removeClass('active');
-            $('#menu_btn').removeClass('active');
+            $('#menu_btn').removeClass('active').addClass('default');
             $('.mask').fadeOut();
             $(this).parent().addClass('active');
             $('html, body').animate({scrollTop:$('#'+anchor).offset().top}, 1000);
