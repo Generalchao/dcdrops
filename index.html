@@ -716,15 +716,16 @@
 			if(gheight > 450){
 				menu_btn.addClass('menu_bg'); 
 				$(document).attr("title","dcdrops");
+
 			}
 			else{
 				menu_btn.removeClass('menu_bg');
 				$(document).attr("title","Home");
+				// 滑动渐隐头部
+				title_banner.css({"opacity":1-(gheight/500),"transform":"translate3d(0,"+gheight/2+"px,-"+gheight*2+"px)"});
+				// 滑动渐隐向下按钮
+				btn_down.css("opacity",1-(gheight/400));
 			}
-			// 滑动渐隐
-			title_banner.css("opacity",1-(gheight/500));
-			title_banner.css("transform","translate3d(0,"+gheight/2+"px,-"+gheight*2+"px)");
-			btn_down.css("opacity",1-(gheight/100));
 
 		});
 

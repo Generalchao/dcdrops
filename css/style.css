@@ -54,7 +54,8 @@ ul, ol{list-style-type: none;}
 /*flex*/
 
 /*header*/
-.header-text{display: inline-block;line-height: normal;font-weight: normal;opacity: .8;}
+.header-text{display: inline-block;line-height: normal;font-weight: normal;opacity: .8;padding-left: 20px;position: relative}
+.header-text:before{position: absolute;content: '';width: 3px;height: 90%;background-color: #FAE300;border-radius: 3px;left: 0px;top:8%;}
 #time_box2{color: #7CC8FF;}
 /*header*/
 
@@ -404,6 +405,7 @@ header .hamburger-menu{top:35px;right: 35px;}
 .colorbox .ball_10{width: 304px;height: 304px;left: 651px;top:667px;background-image: radial-gradient(circle at 71% 27%, #ffffff, #b5c2d2);z-index: 8}
 .colorbox .ball_11{width: 94px;height: 94px;left: 651px;top:650px;background-image: radial-gradient(circle at 71% 27%, #ffffff, #b5c2d2);z-index: 7}
 .colorbox .ball_12{width: 88px;height: 88px;left: 873px;top:562px;background-image: radial-gradient(circle at 56% 32%, #ff96da, #cd1f9e);z-index: 6}
+.header-text{padding-left:30px;}
 
 }
 @media (min-width: 1200px) {
@@ -911,59 +913,25 @@ transition: transform .8s ease-out;
   -ms-perspective:1200px;
   -o-perspective:1200px;
   perspective:1200px;}
-
 @-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+  from {opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}
+  to {opacity: 1;-webkit-transform: none;transform: none;}
 }
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+  from {opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}
+  to {opacity: 1;-webkit-transform: none;transform: none;}
 }
 .fadeInUp {-webkit-animation-name: fadeInUp;animation-name: fadeInUp;}
-.animated {-webkit-animation-duration: .5s;animation-duration: .5s;-webkit-animation-fill-mode: both;animation-fill-mode: both;}
+.animated {-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-fill-mode: both;animation-fill-mode: both;}
 @-webkit-keyframes fadeOutDown {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
+  from {opacity: 1;}
+  to {opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}
 }
 @keyframes fadeOutDown {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
+  from {opacity: 1;}
+  to {opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}
 }
 .fadeOutDown {-webkit-animation-name: fadeOutDown;animation-name: fadeOutDown;}
-
 i:before{padding: 0 !important;margin: 0 !important;line-height: normal !important;}
 
 .title_bar{width: 100%;height: 56px;line-height: 56px; background: #fff;position: fixed;top: 0px;left: 0;right: 0;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);z-index: 11;}
