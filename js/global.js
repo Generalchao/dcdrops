@@ -528,13 +528,15 @@ $(window).scrollStopped(function(){
             $(this).removeClass('active').addClass('default');
             headerVal.removeClass('active');
             $('.mask').fadeOut();
+            $('nav ul li').removeClass('fadeInLeft').addClass('fadeOutLeft');
             // $('#content').css("transform","perspective(500px) translate3d(0,0,0)");
         } else {
-                $(this).addClass('active').removeClass('default');
-                headerVal.addClass('active');
-                $('.mask').fadeIn();
-                // $('#content').css("transform","perspective(500px) translate3d(0,0,-20px)");
-                }
+            $(this).addClass('active').removeClass('default');
+            headerVal.addClass('active');
+            $('.mask').fadeIn();
+            $('nav ul li').addClass('fadeInLeft').removeClass('fadeOutLeft');
+            // $('#content').css("transform","perspective(500px) translate3d(0,0,-20px)");
+        }
     });
 
     // 点遮罩收起菜单
