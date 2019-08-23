@@ -4,43 +4,39 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="format-detection" content="telephone=no" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
 <link href="css/simplelightbox.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="img/favicon.ico" rel="shortcut icon" />
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700,900%7CPlayfair+Display:700%7CRaleway:300,400,500,600,700%7CTrirong:900" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Nunito:400,700" rel="stylesheet">
 <!-- 引入vue -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- Gif自动播放 -->
+<script type="text/javascript" src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
 <title>Home</title>
 <style type="text/css">
 	.banner__btn{cursor: pointer;padding: 20px;}
-
-
 </style>
 </head>
 
 <body>
 	<div id="loader-wrapper" class="animated">
 		<div class="loader"></div>
-		<p>Hi，<font id="time_box"></font>作品预热中...</p>
+		<p>   Hi，<font id="time_box"></font>作品预热中...</p>
 	</div>
 	<header>
 		<div class="hamburger-menu default" id="menu_btn"><span></span><span></span><span></span></div>
 		<nav class="scroll-nav">
 			<i class="icon-logo"></i>
 			<ul>
-				<li class="active animated"><a data-anchor="home"><i class="icon-home-1"></i><span>Home</span></a></li>
+				<li class="active animated"><a data-anchor="home"><i class="icon-home"></i><span>Home</span></a></li>
 				<li class="animated"><a data-anchor="about"><i class="icon-about"></i><span>About</span></a></li>
 				<li class="animated"><a data-anchor="portfolio"><i class="icon-portfolio"></i><span>Portfolio</span></a></li>
 				<li class="animated"><a data-anchor="skill"><i class="icon-skill"></i><span>Skill</span></a></li>
 				<li class="animated"><a data-anchor="strengths"><i class="icon-strengths"></i><span>Strengths</span></a></li>
 				<li class="animated"><a data-anchor="work"><i class="icon-work"></i><span>Work</span></a></li>
 				<li class="animated"><a data-anchor="contact"><i class="icon-contact"></i><span>Contact</span></a></li>
-				<li class="animated"><a href="message.html"><i class="icon-contact"></i><span>Discuss <font style="font-size: 12px;opacity: .3;font-weight: normal;">Bata</font></span></a></li>
+				<li class="animated"><a href="message.html"><i class="icon-discuss"></i><span>Discuss <font style="font-size: 12px;opacity: .3;font-weight: normal;">Bata</font></span></a></li>
 			</ul>
 		</nav>
 		<div class="mask"></div>
@@ -158,37 +154,23 @@
 	<!-- container-style-1 -->
 	<div class="container-style-1">
 		<div class="banner-nav">
-			<!-- 波浪-->
-			<div class="wave-box">
-				<div class="marquee-box marquee-up" id="marquee-box">
-					<div class="marquee">
-						<div class="wave-list-box" id="wave-list-box1">
-							<ul>
-								<li><img height="60" alt="波浪" src="img/wave_02.png"></li>
-							</ul>
-						</div>
-						<div class="wave-list-box" id="wave-list-box2">
-							<ul>
-								<li><img height="60" alt="波浪" src="img/wave_02.png"></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="marquee-box" id="marquee-box3">
-					<div class="marquee">
-						<div class="wave-list-box" id="wave-list-box4">
-							<ul>
-								<li><img height="60" alt="波浪" src="img/wave_01.png"></li>
-							</ul>
-						</div>
-						<div class="wave-list-box" id="wave-list-box5">
-							<ul>
-								<li><img height="60" alt="波浪" src="img/wave_01.png"></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>	
+
+			<!--波浪Waves Container-->
+			<div>
+				<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+					<defs>
+						<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+					</defs>
+					<g class="parallax">
+						<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+						<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+						<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+						<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+					</g>
+				</svg>
+			</div>
+			<!--波浪Waves end-->
+
 			<div class="btn-down" data-anchor="about">
 				<i class="icon-arrow"></i>
 				<i class="icon-arrow"></i>
@@ -327,8 +309,8 @@
 							<div class="grid-item category-3">
 								<a href="img/dx_007.gif" class="lightbox"><img data-lazyload="img/dx_007.jpg"></a>
 							</div>			
-							<div class="grid-item category-3">
-								<a href="img/dx_006.gif" class="lightbox"><img data-lazyload="img/dx_006.jpg"></a>
+							<div class="grid-item category-3 freezeframe">
+								<a href="img/dx_006.gif" class="lightbox"><img src="img/dx_006.gif"></a>
 							</div>			
 							<div class="grid-item category-3">
 								<a href="img/dx_005.gif" class="lightbox"><img data-lazyload="img/dx_005.jpg"></a>
@@ -443,21 +425,21 @@
 								<ol>
 									<li>
 										<article class="small-sm">
-											<h3 class="h3">响应最新设计趋势</h3>
+											<h4 class="h4">响应最新设计趋势</h4>
 											<div class="empty-space h20-xs"></div>
 											<p>从拟物到扁平、从ios5到ios11，设计的趋势是贴合人的审美的习惯在优化迭代着，本人常泡站酷、追波、UI中国各大设计平台，实时关注最新动态，并运用到自己的设计中。</p>
 										</article>
 									</li>
 									<li>
 										<article class="small-sm">
-											<h3 class="h3">代码技能加持</h3>
+											<h4 class="h4">代码技能加持</h4>
 											<div class="empty-space h20-xs"></div>
 											<p>本人有一定的前端代码能力，独立完成自己的UI呈现不是问题，可同时站在视觉及技术实现的角度做产品，可保障最优化呈现产品视觉及人机交互。</p>
 										</article>
 									</li>
 									<li>
 										<article class="small-sm">
-											<h3 class="h3">5年UI经验</h3>
+											<h4 class="h4">5年UI经验</h4>
 											<div class="empty-space h20-xs "></div>
 											<p>5年走过坑、碰过壁，做过有满意的作品、有残缺的作品、懂得UI的目的、能够权衡视觉与技术实现的平衡，能够解决问题并让用户愉悦的UI才是好UI。</p>
 										</article>
@@ -665,6 +647,10 @@
 <script src="js/mui.lazyload.img.js"></script>
 	<script>
 
+	// Gif自动播放	
+	new Freezeframe();
+	// Gif自动播放
+
 // 增加后移除动画
 	$(function(){
 		$('.ball').addClass('fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
@@ -682,35 +668,14 @@
 			});
 		})(mui);
 
-	//波浪动画
-		$(function () {
-			var marqueeScroll = function (id1, id2, id3, timer) {
-				var $parent = $("#" + id1);
-				var $goal = $("#" + id2);
-				var $closegoal = $("#" + id3);
-				$closegoal.html($goal.html());
-				function Marquee() {
-					if (parseInt($parent.scrollLeft()) - $closegoal.width() >= 0) {
-						$parent.scrollLeft(parseInt($parent.scrollLeft()) - $goal.width());
-					}
-					else {
-						$parent.scrollLeft($parent.scrollLeft() + 1);
-					}
-				}
-
-				setInterval(Marquee, timer);
-			}
-			var marqueeScroll1 = new marqueeScroll("marquee-box", "wave-list-box1", "wave-list-box2", 20);
-			var marqueeScroll2 = new marqueeScroll("marquee-box3", "wave-list-box4", "wave-list-box5", 40);
-		});
-
 
 	// 滚动改变
 		$(window).scroll(function(){
-			var gheight = $(window).scrollTop();
-			var title_banner = $('.swiper-style-banner .flex .col-sm-6');
-			var menu_btn = $('#menu_btn');
-			var btn_down = $('.btn-down');
+			var gheight = $(window).scrollTop();//滚动高度
+			var title_banner = $('.swiper-style-banner .flex .col-sm-6');//首屏文字
+			var menu_btn = $('#menu_btn');//菜单按钮
+			var btn_down = $('.btn-down');//向下按钮
+			var colorbox = $('.colorbox');//彩球容器
 
 			// 滚动改变菜单按钮背景与改变title内容
 			if(gheight > 450){
