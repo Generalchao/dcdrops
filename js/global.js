@@ -623,53 +623,24 @@ $(window).scrollStopped(function(){
 
 
 
-  // 加载loading
-      $(window).load(function(){ 
-        $('#loader-wrapper').fadeOut(300);
-    });   
+// 加载loading
+$(window).load(function(){ 
+    $('#loader-wrapper').fadeOut(300);
+});   
 
 
- // 点击平滑跳转到底部
- $('#section-topbar,#section-topbar2,#section-topbar02').click(function(){$('html,body').animate({scrollTop:$(document).height()-$(window).height()}, 800);});      
+// 点击平滑跳转到底部
+$('#section-topbar,#section-topbar2,#section-topbar02').click(function(){$('html,body').animate({scrollTop:$(document).height()-$(window).height()}, 800);});      
 
-
- // 检测上下滑动  
-    var new_scroll_position = 0;
-    var last_scroll_position;
-    var header = document.getElementById("section-topbar");
-    var header2 = document.getElementById("section-topbar2");
-
-    window.addEventListener('scroll', function(e) {
-      last_scroll_position = window.scrollY;
-
-      // Scrolling down
-      if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-      header.classList.remove("slideLeft");
-      header.classList.add("slideRight");
-
-      header2.classList.remove("slideLeft2");
-      header2.classList.add("slideRight2");
-
-      // Scrolling up
-      } else if (new_scroll_position > last_scroll_position) {
-      header.classList.remove("slideRight");
-      header.classList.add("slideLeft");
-
-      header2.classList.remove("slideRight2");
-      header2.classList.add("slideLeft2");
-      }
-
-      new_scroll_position = last_scroll_position;
-    });
 
 //百度统计
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "https://hm.baidu.com/hm.js?f49f664c274810db237c8a6f98735396";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f49f664c274810db237c8a6f98735396";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 
 
 
