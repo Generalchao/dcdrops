@@ -51,29 +51,31 @@
     <iframe frameborder="0" width="100%" height="498" src="https://v.qq.com/iframe/player.html?vid=r05202nlx02&tiny=0&auto=0" allowfullscreen></iframe>
   </div>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="js/global.js"></script>
-  <script type="text/javascript">
-     function browserRedirect() {
-              var sUserAgent = navigator.userAgent.toLowerCase();
-              var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-              var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-              var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-              var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-              var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-              var bIsAndroid = sUserAgent.match(/android/i) == "android";
-              var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-              var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-           
-              if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-                 $("#section-topbar01").attr("href","https://generalchao.github.io/sweet/"); 
-              } else {
-                 $("#section-topbar01").attr("href","td_pc.html"); 
-              }
-          }
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript"src="js/more.js"></script>
 
-          browserRedirect();
+<script type="text/javascript">
+   function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
          
-  </script>
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+               $("#section-topbar01").attr("href","https://generalchao.github.io/sweet/"); 
+            } else {
+               $("#section-topbar01").attr("href","td_pc.html"); 
+            }
+        }
+
+        browserRedirect();
+       
+</script>
 </body>
 </html>
