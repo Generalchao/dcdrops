@@ -64,6 +64,7 @@
 
 		<div class="swiper-container" data-speed="1000" data-pagination="custom" data-parallax="1" data-breakpoints="1" data-slides-per-view="1" data-xs-slides="1" data-sm-slides="1" data-md-slides="1">
 			<div class="swiper-wrapper">
+
 				<div class="swiper-slide">
 					<div class="container">
 						<div class="row flex">
@@ -106,7 +107,8 @@
 
 					</div>
 				</div>
-				<div class="swiper-slide">
+
+				<!-- <div class="swiper-slide">
 					<div class="container-fluid">
 						<div class="bg"><div class="bg-layer-40"></div></div>
 						<div class="row flex">
@@ -126,7 +128,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
+
 			</div>
 
 
@@ -690,14 +693,36 @@
 		});	
 
 
-	// 加载loading
-      $(window).load(function(){ 
-        $('#loader-wrapper').addClass('fadeOutDown');
-        $('#hide01').hide();
-        $('#portfolio_items').show();
+		// 加载loading(已移除jquery)
+		var loader_wrapper = document.getElementById('loader-wrapper');
+		var hide01 = document.getElementById('hide01');
+		var portfolio_items = document.getElementById('portfolio_items');
 
-    });	
+		//监听加载状态改变
+		document.onreadystatechange = completeLoading;
+		//加载状态为complete时移除loading效果
+		function completeLoading() {
+		  if (document.readyState == "complete") {
+				loader_wrapper.classList.add('fadeOutDown');
+				hide01.style.display = 'none';
+				portfolio_items.style.display = 'block';
+		  }
+		}
 
+		// 判断时辰(已移除jquery)
+		var timeshow1 = document.getElementById("time_box");
+		var timeshow2 = document.getElementById("time_box2");
+
+		now = new Date(),hour = now.getHours() 
+
+		if(hour < 6){timeshow1.innerHTML = "凌晨好！";timeshow2.innerHTML = "good day! "} 
+		else if (hour < 9){timeshow1.innerHTML = "早上好！";timeshow2.innerHTML = "good morning! "} 
+		else if (hour < 12){timeshow1.innerHTML = "上午好！";timeshow2.innerHTML = "good morning! "} 
+		else if (hour < 14){timeshow1.innerHTML = "中午好！";timeshow2.innerHTML = "good afternoon! "} 
+		else if (hour < 17){timeshow1.innerHTML = "下午好！";timeshow2.innerHTML = "good afternoon! "} 
+		else if (hour < 19){timeshow1.innerHTML = "傍晚好！";timeshow2.innerHTML = "good evening! "} 
+		else if (hour < 22){timeshow1.innerHTML = "晚上好！";timeshow2.innerHTML = "good night! "} 
+		else {timeshow1.innerHTML = "夜里好！";timeshow2.innerHTML = "it`s time to sleep! "} 
 
 
 		// 滚动到指定位置固定菜单
@@ -728,16 +753,9 @@
 		// }
 
 
-     // 判断时辰
-      now = new Date(),hour = now.getHours() 
-		if(hour < 6){$('#time_box').text("凌晨好！");$('#time_box2,#time_box3').text("good day! ")} 
-		else if (hour < 9){$('#time_box').text("早上好！");$('#time_box2,#time_box3').text("good morning! ")} 
-		else if (hour < 12){$('#time_box').text("上午好！");$('#time_box2,#time_box3').text("good morning! ")} 
-		else if (hour < 14){$('#time_box').text("中午好！");$('#time_box2,#time_box3').text("good afternoon! ")} 
-		else if (hour < 17){$('#time_box').text("下午好！");$('#time_box2,#time_box3').text("good afternoon! ")} 
-		else if (hour < 19){$('#time_box').text("傍晚好！");$('#time_box2,#time_box3').text("good evening! ")} 
-		else if (hour < 22){$('#time_box').text("晚上好！");$('#time_box2,#time_box3').text("good night! ")} 
-		else {$('#time_box').text("夜里好！");$('#time_box2,#time_box3').text("it`s time to sleep! ")} 		
+
+
+ 	
 
 
 		
