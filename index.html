@@ -28,7 +28,7 @@
 		<p>   Hi，<font id="time_box"></font>作品预热中...</p>
 	</div>
 	<header>
-		<div class="hamburger-menu default" id="menu_btn"><span></span><span></span><span></span></div>
+		<div class="hamburger-menu default slideLeft42" id="menu_btn"><span></span><span></span><span></span></div>
 		<nav class="scroll-nav">
 			<i class="icon-logo"></i>
 			<ul>
@@ -622,7 +622,7 @@
 <!-- 轮播图swiper插件 -->
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/simple-lightbox.min.js"></script>
-<script src="js/global.js"></script>
+<script src="js/main.js"></script>
 
 <script src="js/mui.min.js "></script>
 <script src="js/mui.lazyload.js"></script>
@@ -651,7 +651,7 @@
 		})(mui);
 
 
-	// 滚动改变
+		// 滚动改变
 		$(window).scroll(function(){
 			var gheight = $(window).scrollTop();//滚动高度
 			var title_banner = $('.swiper-style-banner .flex .col-sm-6');//首屏文字
@@ -675,22 +675,25 @@
 			}
 
 		});
+		
 
-	// 检测上下滑动	
+		// 检测上下滑动(已移除jquery)	
 		var new_scroll_position = 0;
-		var last_scroll_position;
+		var last_scroll_position ;
+		var menu_btn = document.getElementById('menu_btn');
 		window.addEventListener('scroll', function(e) {
-		  	last_scroll_position = window.scrollY;
 
-		  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-			$(".hamburger-menu.default").removeClass("slideLeft42").addClass("slideRight42");
+			last_scroll_position = window.scrollY;
 
-		  } else if (new_scroll_position > last_scroll_position) {
-			$(".hamburger-menu.default").removeClass("slideRight42").addClass("slideLeft42");
-		  }
+			if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+				menu_btn.classList.replace("slideLeft42","slideRight42");
+			} else if (new_scroll_position > last_scroll_position) {
+				menu_btn.classList.replace("slideRight42","slideLeft42");
+			}
 
 		  	new_scroll_position = last_scroll_position;
 		});	
+
 
 
 		// 加载loading(已移除jquery)
@@ -708,6 +711,7 @@
 				portfolio_items.style.display = 'block';
 		  }
 		}
+
 
 		// 判断时辰(已移除jquery)
 		var timeshow1 = document.getElementById("time_box");
