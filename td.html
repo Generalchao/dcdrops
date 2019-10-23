@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>小糖果</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<style type="text/css">
-.qr_box{position: absolute;width: 200px;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);right: 0;top:20px;display: none;height: 250px;}
-.qr_box span{line-height: 50px;background-color: #fff;color: #000;display: block;text-align: center;}
-.qr_box div{height: 200px;background-color: #fff;}
-.qr_box a{line-height: 50px;background-color: #fff;}
-#section-topbar01:hover .qr_box{display: block;}
-.qr_box:hover{display: block;}
+    .qr_box{position: absolute;width: 200px;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);right: 0;top:20px;display: none;height: 250px;}
+    .qr_box span{line-height: 50px;background-color: #fff;color: #000;display: block;text-align: center;}
+    .qr_box div{height: 200px;background-color: #fff;}
+    .qr_box a{line-height: 50px;background-color: #fff;}
+    #section-topbar01:hover .qr_box{display: block;}
+    .qr_box:hover{display: block;}
 
 	</style>
 </head>
@@ -56,6 +56,7 @@
 <script type="text/javascript"src="js/more.js"></script>
 
 <script type="text/javascript">
+
    function browserRedirect() {
             var sUserAgent = navigator.userAgent.toLowerCase();
             var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
@@ -73,8 +74,7 @@
                $("#section-topbar01").attr("href","td_pc.html"); 
             }
         }
-
-        browserRedirect();
+    browserRedirect();
        
 </script>
 </body>

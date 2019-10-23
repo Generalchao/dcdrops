@@ -1,26 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="format-detection" content="telephone=no" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<!-- swiper5 -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">   
-<link href="css/simplelightbox.css" rel="stylesheet" type="text/css" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link href="img/favicon.ico" rel="shortcut icon" />
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- swiper5 -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">   
+		<link href="css/simplelightbox.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="img/favicon.ico" rel="shortcut icon" />
 
-<!-- 引入vue -->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<!-- Gif自动播放 -->
-<script type="text/javascript" src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
-<title>Home</title>
-<style type="text/css">
-	.banner__btn{cursor: pointer;padding: 20px;}
-
-</style>
-</head>
+		<!-- 引入vue -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<title>Home</title>
+	</head>
 
 <body>
 	<div id="loader-wrapper" class="animated">
@@ -68,7 +62,7 @@
 				<div class="swiper-slide">
 					<div class="container">
 						<div class="row flex">
-							<div class="col-sm-6 col-xs-12 col-xs-offset-0">
+							<div id="banner_title" class="col-sm-6 col-xs-12 col-xs-offset-0">
 								<div class="empty-space h50-xs"></div>
 								<article class="text-left">
 									<h1 class="h1" data-swiper-parallax="-800"><span>Hi, </span><font id="time_box2"></font><span class="header-text">I'm glad that you visited my site where he can get to know me and my work.</span></h1>
@@ -158,7 +152,7 @@
 			</div>
 			<!--波浪Waves end-->
 
-			<div class="btn-down" data-anchor="about">
+			<div id="btn-down" class="btn-down" data-anchor="about">
 				<i class="icon-arrow"></i>
 				<i class="icon-arrow"></i>
 			</div>
@@ -269,7 +263,7 @@
 								<a href="img/处暑.jpg" class="lightbox"><img data-lazyload="img/处暑.jpg"></a>
 							</div>
 							<div class="grid-item category-4">
-								<a href="img/立秋.jpg" class="lightbox"><img data-lazyload="img/立秋.jpg"></a>
+								<a href="img/立秋@2x.jpg" class="lightbox"><img data-lazyload="img/立秋@2x.jpg"></a>
 							</div>
 							<div class="grid-item category-4">
 								<a href="img/大暑2.jpg" class="lightbox"><img data-lazyload="img/大暑2.jpg"></a>
@@ -627,22 +621,21 @@
 <script src="js/mui.min.js "></script>
 <script src="js/mui.lazyload.js"></script>
 <script src="js/mui.lazyload.img.js"></script>
+<!-- 聊天机器人 -->
+<script src="//code.tidio.co/nuuezqktb1hmgyuizyndaojxz7y0mpnk.js">    
+</script>
 	<script>
 
-	// Gif自动播放	
-	new Freezeframe();
-	// Gif自动播放
-
-// 增加后移除动画
-	$(function(){
-		$('.ball').addClass('fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
-	  	function(){
-	      $(this).removeClass('fadeInUp');
-	    });
-	  });
-// 增加后移除动画
+		// 增加后移除动画
+		$(function(){
+			$('.ball').addClass('fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+		  	function(){
+		      $(this).removeClass('fadeInUp');
+		    });
+		  });
 
 
+		// 懒加载
 		mui.init();
 		(function($) {
 			$(document).imageLazyload({
@@ -651,30 +644,28 @@
 		})(mui);
 
 
-		// 滚动改变
-		$(window).scroll(function(){
-			var gheight = $(window).scrollTop();//滚动高度
-			var title_banner = $('.swiper-style-banner .flex .col-sm-6');//首屏文字
-			var menu_btn = $('#menu_btn');//菜单按钮
-			var btn_down = $('.btn-down');//向下按钮
-			var colorbox = $('.colorbox');//彩球容器
+		// 滚动缩放(已移除jquery)
+		window.onscroll= function(){
+			var gheight = document.documentElement.scrollTop;//滚动高度
+			var banner_title = document.getElementById('banner_title');//首屏文字
+			var menu_btn = document.getElementById('menu_btn');//菜单按钮
+			var btn_down = document.getElementById('btn-down');//向下按钮
 
 			// 滚动改变菜单按钮背景与改变title内容
 			if(gheight > 450){
-				menu_btn.addClass('menu_bg'); 
-				$(document).attr("title","dcdrops");
-
+				menu_btn.classList.add('menu_bg');
+				document.title = 'dcdrops';
 			}
-			else{
-				menu_btn.removeClass('menu_bg');
-				$(document).attr("title","Home");
+			else{	
+				menu_btn.classList.remove('menu_bg');
+				document.title = 'Home';
 				// 滑动渐隐头部
-				title_banner.css({"opacity":1-(gheight/500),"transform":"translate3d(0,"+gheight/2+"px,-"+gheight*2+"px)"});
+				banner_title.style.cssText = "opacity:1-(gheight/500); transform:translate3d(0,"+gheight/2+"px,-"+gheight*2+"px);"
 				// 滑动渐隐向下按钮
-				btn_down.css("opacity",1-(gheight/400));
+				btn_down.style.opacity = 1-(gheight/400);
 			}
 
-		});
+		};
 		
 
 		// 检测上下滑动(已移除jquery)	
@@ -731,9 +722,6 @@
 
 		// 滚动到指定位置固定菜单
 
-
-
-
 		// window.onload = function(){
 		//     menuFixed();
 		// }
@@ -755,12 +743,6 @@
 		//         $("#display_options_space").addClass('block');
 		//     }
 		// }
-
-
-
-
- 	
-
 
 		
 	</script>

@@ -18,7 +18,7 @@
 		  </div>
 		</div>
 	</div>
-<a class="demo_btn" id="section-topbar"><i class="icon-video"></i>VIDEO</a>
+<a class="demo_btn slideLeft" id="section-topbar"><i class="icon-video"></i>VIDEO</a>
 <div class="xm_content">
 <img src="img/zzxc_img/正在现场001.jpg">
 <img src="img/zzxc_img/正在现场002.jpg">
@@ -29,30 +29,24 @@
 <script type="text/javascript"src="js/more.js"></script>
 
 <script type="text/javascript">
-// 检测上下滑动	
+
+	// 检测上下滑动(已移除jquery)	
 	var new_scroll_position = 0;
 	var last_scroll_position;
 	var header = document.getElementById("section-topbar");
 
 	window.addEventListener('scroll', function(e) {
+
 	  last_scroll_position = window.scrollY;
 
-	  // Scrolling down
 	  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-		// header.removeClass('slideDown').addClass('slideUp');
-		header.classList.remove("slideLeft");
-		header.classList.add("slideRight");
-
-	  // Scrolling up
+		header.classList.replace("slideLeft","slideRight");
 	  } else if (new_scroll_position > last_scroll_position) {
-		// header.removeClass('slideUp').addClass('slideDown');
-		header.classList.remove("slideRight");
-		header.classList.add("slideLeft");
+		header.classList.replace("slideRight","slideLeft");
 	  }
 
 	  new_scroll_position = last_scroll_position;
 	});
-// 结束检测上下滑动
   
 
 </script>
