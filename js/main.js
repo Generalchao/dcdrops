@@ -167,17 +167,25 @@ $(function() {
     /*==============================*/
     /* 06 - function on page scroll */
     /*==============================*/
+    // $(window).scroll(function(){
+    //  if ($('.swiper-style-banner').length){
+    //     if ($(this).scrollTop() >= winH){  
+    //         headerVal.addClass('fixed');
+    //     }
+    //     else{
+    //         headerVal.removeClass('fixed');
+    //     } 
+    //  }else{
+    //      headerVal.addClass('fixed');
+    //  }
+
+    // });
+
+    // 滚动收起菜单
     $(window).scroll(function(){
-     if ($('.swiper-style-banner').length){
-        if ($(this).scrollTop() >= winH){  
-            headerVal.addClass('fixed');
-        }
-        else{
-            headerVal.removeClass('fixed');
-        } 
-     }else{
-         headerVal.addClass('fixed');
-     }
+        $('#menu_btn').removeClass('active').addClass('default');
+        headerVal.removeClass('active');
+        $('.mask').fadeOut();
 
     });
 
