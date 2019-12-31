@@ -308,7 +308,7 @@ article{position: relative; float: left; width: 100%;}
 }
 
 /*LOADER*/
-#loader-wrapper{background: url('https://s2.ax1x.com/2019/12/30/llF0hR.jpg') no-repeat center/cover;position: fixed; bottom: 30px; left: 20px;right: 20px;max-width: 500px; border-radius: 14px; height: 100px;line-height: 100px;text-align:center; z-index: 51;box-shadow: 0 5px 20px rgba(0,0,0,.05);}
+#loader-wrapper{background: url('https://s2.ax1x.com/2019/12/31/l1PrtA.jpg') no-repeat center/cover;position: fixed; bottom: 30px; left: 20px;right: 20px;max-width: 500px; border-radius: 14px; height: 100px;line-height: 100px;text-align:center; z-index: 51;box-shadow: 0 5px 20px rgba(0,0,0,.05);}
 .loader {position: absolute;top: calc(50% - 25px);left: 6%;border: 4px solid #fff;border-top: 4px solid #000;border-radius: 50%;width: 50px;height: 50px;animation: spin 2s linear infinite;}
 #loader-wrapper p{color: #000;}
 
@@ -347,7 +347,7 @@ header .hamburger-menu.active span:nth-child(2){opacity: 0;}
 header .hamburger-menu.active span:nth-child(3){-ms-transform: rotate(-45deg) translateX(3px) translateY(-3px); -webkit-transform: rotate(-45deg) translateX(3px) translateY(-3px); transform: rotate(-45deg) translateX(3px) translateY(-3px);width: 24px;}
 header .hamburger-menu:hover{background-color: rgba(0, 0, 0, 0.34);}
 .logo{position: absolute; left: 30px; top: 30px; z-index: 2;color: #fff;font-size: 38px;}
-.scroll-nav{background:url('https://s2.ax1x.com/2019/12/30/llF0hR.jpg') no-repeat center/cover;padding: 90px 20px 20px;/* background-color: #fff; */position: fixed;left: 0;width: 80vw;max-width: 300px;top:0; transition: .5s;z-index: 1000;height: 100vh;transform: translateX(-100%);}
+.scroll-nav{background:url('https://s2.ax1x.com/2019/12/31/l1PrtA.jpg') no-repeat center/cover;padding: 90px 20px 20px;/* background-color: #fff; */position: fixed;left: 0;width: 80vw;max-width: 300px;top:0; transition: .5s;z-index: 1000;height: 100vh;transform: translateX(-100%);}
 header.active .scroll-nav{transform: translateX(0);}
 .colorbox{width: 970px;height: 970px;background: rgba(0, 0, 0, 0);position: absolute;left: -100px;top:-20px;z-index: 1;transform: scale(.5);}
 .colorbox .ball{position: absolute;border-radius: 100%;}
@@ -604,7 +604,7 @@ transform: translate(0%, -50%);}
 nav ul li:before, nav ul li, .banner-nav .btn-down i, .sorting-menu ul li:before, .sorting-menu ul li, a, .follow .item, .follow .item:before, .btn-1 span, .button:after,.button span,.button i{-moz-transition:all 150ms ease-out; -o-transition:all 150ms ease-out; -webkit-transition:all 150ms ease-out; transition:all 150ms ease-out; -ms-transition:all 150ms ease-out;}
 header,.logo, .price-wrapper .price-icon:before, .grid-item img, .prod-item .prod-item-img{-moz-transition:all 300ms ease-out; -o-transition:all 300ms ease-out; -webkit-transition:all 300ms ease-out; transition:all 300ms ease-out; -ms-transition:all 300ms ease-out;}
 
-.bg-img-1 {background-image: url(../img/bg-1.jpg);}
+.bg-img-1 {background-image: url('https://s2.ax1x.com/2019/12/31/l1P6pt.jpg');}
 
 /*首页菜单动效*/
 .slideRight42 {transform: translateX(85px);transition: transform .5s ease-out;}
@@ -734,7 +734,7 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .bottom_link_btn a:hover{transform: scale(1.1);color: #979797;}
 .bottom_link_btn .back-top{position: absolute;right: 10px;color:#979797; }
 .icon-logo{font-size: 40px;position: absolute;top: 30px;left: calc(50% - 15px);color: #000;}
-#skill,#work{background:#000 url(../img/bg-rectangle.png);background-size: cover;}
+#skill,#work{background:#000 url('https://s2.ax1x.com/2019/12/31/l1FUde.png') no-repeat center/cover;}
 #portfolio{background:#222;}
 .icon-email,.icon-call{color: var(--main-color);font-size: 40px;}
 .contact img{width: 50px;margin-top: 20px;}
