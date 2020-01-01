@@ -755,8 +755,6 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .category-1 a:before, .category-2 a:before{background-position: 72px 0;cursor: pointer;}
 .category-3 a:before{background-position: 96px 0;}
 .category-3 a, .category-4 a{cursor: -webkit-zoom-in;}
-.number_ul li{width: 49%;display: inline-flex;padding: 10px;position: relative;}
-.number_ul li:before{position: absolute;right: 0;bottom: 0;left: 0;height: 1px;content: '';-webkit-transform: scaleY(.5);transform: scaleY(.5);background-color: #c8c7cc;}
 .double_modle2{width: 16px;height: 16px;position: relative;display: inline-block;margin-right: 15px;}
 .double_modle2 span{width: 7px;height: 7px;background-color: #fff;position: absolute;left: 0;top: 0;}
 .double_modle2 span:nth-child(2){left: 9px;}
