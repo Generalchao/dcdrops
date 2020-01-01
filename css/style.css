@@ -18,6 +18,9 @@ ul, ol{list-style-type: none;}
 .container{max-width: 100%;position: relative;}
 #content{overflow-x: hidden;transition: .5s;transform:perspective(500px)  translate3d(0,0,0);}
 .swiper-wrapper .container{padding-left: 30px;padding-right: 30px;}
+@media (min-width: 415px) {
+  .swiper-wrapper .container{padding-left: 60px;padding-right: 60px;}
+}
 
 
 @font-face {
@@ -390,7 +393,7 @@ header .hamburger-menu{top:35px;right: 35px;}
 .colorbox .ball_11{width: 94px;height: 94px;left: 651px;top:650px;background-image: radial-gradient(circle at 71% 27%, #ffffff, #b5c2d2);z-index: 7}
 .colorbox .ball_12{width: 88px;height: 88px;left: 873px;top:562px;background-image: radial-gradient(circle at 56% 32%, #ff96da, #cd1f9e);z-index: 6}
 .header-text{padding-left:30px;}
-#loader-wrapper{bottom: 200px;left:calc(50vw - 250px);}
+#loader-wrapper{bottom: 100px;left:calc(50vw - 250px);}
 .social-network{display: block}
 
 }
@@ -460,12 +463,13 @@ footer .follow{margin-left: 10px;}
 
 .banner-nav .follow{position: absolute; top: 50%; margin-top: -15px; right: 50px;}
 .banner-nav .follow span{font-size: 13px; margin-right: 15px;}
+  .swiper-style-banner .flex{display: -ms-flexbox;display: -webkit-flex;display: flex;-ms-flex-align: center;-webkit-align-items: center;-webkit-box-align: center;align-items: center;}
+
 @media (max-width: 1199px) {
   .banner-nav{position: absolute; width: 100%;}
-  .swiper-style-banner .flex{display: -ms-flexbox;display: -webkit-flex;display: flex;-ms-flex-align: center;-webkit-align-items: center;-webkit-box-align: center;align-items: center;}
 }
 @media screen and (max-width: 767px) {
-  .swiper-style-banner .flex article{margin-top: 50px;}
+  /* .swiper-style-banner .flex article{margin-top: 50px;} */
   .banner-nav .follow span{display: none;}
   .waves {height:40px;margin-top: 30px;}
 }
