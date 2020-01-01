@@ -68,7 +68,7 @@ ul, ol{list-style-type: none;}
 
 /*flex*/
 .flex-js{display: flex;-webkit-align-items:center; align-items:center;}
-.flex{display: -ms-flexbox;display: -webkit-flex;display: flex;-ms-flex-align: center;-webkit-align-items: center;-webkit-box-align: center;align-items: center;height: 100%; min-height: inherit;}
+.flex{display: -ms-flexbox;display: -webkit-flex;display: flex;/* -ms-flex-align: center;-webkit-align-items: center;-webkit-box-align: center;align-items: center; */height: 100%; min-height: inherit;}
 .flex-order-1{order: 1;}
 .flex-order-2{order: 2;}
 .flex-eq-h{display: -ms-flexbox; display: -webkit-flex; display: flex; -ms-flex-align: stretch; -webkit-align-items: stretch; -webkit-box-align: stretch; align-items: stretch; width: 100%; height: 100%; min-height: inherit;}
@@ -298,13 +298,8 @@ article{position: relative; float: left; width: 100%;}
 .block{position: relative; float: left; width: 100%;}
 .wide-container-fluid{position: relative; padding: 0 50px;}
 .container-style-1{position: relative;}
-.container-sm-30{padding-right: 30px; padding-left: 30px;}
 @media (max-width: 767px) {
   .wide-container-fluid{padding: 0 15px;}
-}
-@media (max-width: 767px) {
-  /* .container-sm-30{padding-right: 15px; padding-left: 15px;} */
-  .container-sm-30.xs-30{padding-right: 30px; padding-left: 30px;}
 }
 
 /*LOADER*/
@@ -773,7 +768,11 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .about-detail td:before{position: absolute;right: 0;bottom: 0;left: 0;height: 1px;content: '';-webkit-transform: scaleY(.5);transform: scaleY(.5);background-color: #c8c7cc;}
 .about-detail td:after{position: absolute;right: 0;bottom: 0;top: 0;width: 1px;content: '';-webkit-transform: scaleX(.5);transform: scaleX(.5);background-color: #c8c7cc;}
 .about-detail td:nth-of-type(2n){padding: 15px 0px 15px 15px;}
+.about-detail tr:nth-of-type(1) td{padding-top: 0;}
 .about-detail td:nth-of-type(2n):after{width: 0;}
+.about-detail tr:nth-last-of-type(1) td{padding-bottom: 0;}
 .about-detail tr:nth-last-of-type(1) td:before{height: 0;}
+
+#about{padding: 0 20px;}
 
 
