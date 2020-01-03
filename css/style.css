@@ -161,15 +161,12 @@ article{position: relative; float: left; width: 100%;}
 
 /*hover*/
 .hover-1{display: inline-block;}
-.hover-2{display: inline-block; position: relative; padding: 0 10px;}
-.hover-2:before{content: ""; position: absolute; left: 50%; bottom: -10%; width: 0; height: 1px; background-color: #333; -moz-transition:all 150ms ease-out; -o-transition:all 150ms ease-out; -webkit-transition:all 150ms ease-out; transition:all 150ms ease-out; -ms-transition:all 150ms ease-out;}
 .img-hover-1,
 .img-hover-2{display: block; width: 100%; overflow: hidden;}
 .img-hover-1 img,
 .img-hover-2 img{display: block; width: 100%; -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); -moz-transition:all 300ms ease-out; -o-transition:all 300ms ease-out; -webkit-transition:all 300ms ease-out; transition:all 300ms ease-out; -ms-transition:all 300ms ease-out;}
 @media (min-width: 1200px) {
   .hover-1:hover{color: #fd39c2 !important; cursor: pointer; -moz-transition:all 150ms ease-out; -o-transition:all 150ms ease-out; -webkit-transition:all 150ms ease-out; transition:all 150ms ease-out; -ms-transition:all 150ms ease-out;}
-  .hover-2:hover:before{left: 0; width: 100%;}
   .img-hover-1:hover img{-ms-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1);}
   .img-hover-2:hover img{-ms-transform: scale(0.9); -webkit-transform: scale(0.9); transform: scale(0.9);}
 }
@@ -572,20 +569,14 @@ transform: translate(0%, -50%);}
 
 
 /*公司介绍模块*/
-.price-wrapper{text-align: center;overflow: hidden;margin-bottom: 20px;}
-.price-wrapper .price-icon{position: relative; display: block; width: 80px; height: 80px; margin: 0 auto; background-color: #fff; border-radius: 50%; box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.07); margin-bottom: -45px; z-index: 1;}
-.price-wrapper .price-icon:before{content: ""; position: absolute; left: 50%; bottom: -30px; width: 1px; height: 30px; background-color: #e3e3e3; z-index: 1}
-.price-wrapper .price-icon i{font-size: 40px;position: absolute; left: 50%; top: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: gray;}
-.price-wrapper article{background-color: #fff; padding: 115px 45px 75px 45px;}
+.price-wrapper{overflow: hidden;margin-bottom: 20px;position: relative;}
+.price-wrapper i{font-size: 50px;position: absolute; right: 40px; top: 30px;color: #ccc;z-index: 1;}
+.price-wrapper article{background-color: #fff; padding:45px;}
 .price{font-size: 42px; line-height: 42px; font-weight: 700;  color: #222;}
 .price sup{font-size: 24px;}
 .price-wrapper ul li{margin-bottom: 8px;}
 .price-wrapper ul li:last-child{margin-bottom: 0;}
 .price-wrapper ul li span{ color: #fd39c2; font-weight: 600;}
-
-@media (min-width: 1200px) {
-  .price-wrapper .price-icon:hover:before{background-color: #fd39c2;}
-}
 /*公司介绍模块*/
 
 
@@ -601,7 +592,7 @@ transform: translate(0%, -50%);}
   ==============  */
 /*缓动动效*/
 nav ul li:before, nav ul li, .banner-nav .btn-down i, .sorting-menu ul li:before, .sorting-menu ul li, a, .follow .item, .follow .item:before, .btn-1 span, .button:after,.button span,.button i{-moz-transition:all 150ms ease-out; -o-transition:all 150ms ease-out; -webkit-transition:all 150ms ease-out; transition:all 150ms ease-out; -ms-transition:all 150ms ease-out;}
-header,.logo, .price-wrapper .price-icon:before, .grid-item img, .prod-item .prod-item-img{-moz-transition:all 300ms ease-out; -o-transition:all 300ms ease-out; -webkit-transition:all 300ms ease-out; transition:all 300ms ease-out; -ms-transition:all 300ms ease-out;}
+header,.logo, .grid-item img, .prod-item .prod-item-img{-moz-transition:all 300ms ease-out; -o-transition:all 300ms ease-out; -webkit-transition:all 300ms ease-out; transition:all 300ms ease-out; -ms-transition:all 300ms ease-out;}
 
 .bg-img-1 {background-image: url('https://s2.ax1x.com/2019/12/31/l1P6pt.jpg');}
 
