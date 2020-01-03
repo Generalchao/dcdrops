@@ -570,7 +570,7 @@ transform: translate(0%, -50%);}
 
 /*公司介绍模块*/
 .price-wrapper{overflow: hidden;margin-bottom: 20px;position: relative;}
-.price-wrapper i{font-size: 50px;position: absolute; right: 40px; top: 30px;color: #ccc;z-index: 1;}
+.price-wrapper i{font-size: 50px;position: absolute; right: 40px; top: 36px;color: #ccc;z-index: 1;}
 .price-wrapper article{background-color: #fff; padding:45px;}
 .price{font-size: 42px; line-height: 42px; font-weight: 700;  color: #222;}
 .price sup{font-size: 24px;}
@@ -757,7 +757,7 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .double_modle2 span:nth-child(4){left: 9px;top: 9px;}
 .single_modle2{width: 16px;height: 16px;background-color: #fff;display: inline-block;}
 
-.about-detail td{padding: 15px 15px 15px 0;position: relative;line-height: normal;}
+.about-detail td{padding: 15px 15px 15px 0;position: relative;line-height: normal;width: 50%;}
 .about-detail td:before{position: absolute;right: 0;bottom: 0;left: 0;height: 1px;content: '';-webkit-transform: scaleY(.5);transform: scaleY(.5);background-color: #c8c7cc;}
 .about-detail td:after{position: absolute;right: 0;bottom: 0;top: 0;width: 1px;content: '';-webkit-transform: scaleX(.5);transform: scaleX(.5);background-color: #c8c7cc;}
 .about-detail td:nth-of-type(2n){padding: 15px 0px 15px 15px;}
@@ -767,5 +767,9 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .about-detail tr:nth-last-of-type(1) td:before{height: 0;}
 
 #about{padding: 0 20px;}
+
+.col-md-6.about{position: relative}
+.col-md-6.about:before{position: absolute;top: -26px;left: -31px;z-index: -1;width: 45%;height: 100%;content: "";background: url('../img/dots-small.svg');}
+
 
 
