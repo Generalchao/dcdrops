@@ -769,7 +769,7 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 #about{padding: 0 20px;}
 
 .col-md-6.about{position: relative}
-.col-md-6.about:before{position: absolute;top: -26px;left: -31px;z-index: -1;width: 45%;height: 100%;content: "";background: url('../img/dots-small.svg');}
+.col-md-6.about:before{position: absolute;top: -26px;left: -31px;z-index: -1;width: 45%;height: 90%;content: "";background: url('../img/dots-small.svg');}
 
 
 
