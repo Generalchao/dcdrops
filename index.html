@@ -13,7 +13,7 @@
 
 		<!-- 引入vue -->
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-		<title>Home</title>
+		<title>dcdrops</title>
 	</head>
 
 <body>
@@ -655,11 +655,11 @@
 			// 滚动改变菜单按钮背景与改变title内容
 			if(gheight > 450){
 				menu_btn.classList.add('menu_bg');
-				document.title = 'dcdrops';
+				document.title = 'Thank you for your browsing';
 			}
 			else{	
 				menu_btn.classList.remove('menu_bg');
-				document.title = 'Home';
+				document.title = 'dcdrops';
 				// 滑动渐隐头部
 				banner_title.style.cssText = "opacity:1-(gheight/500); transform:translate3d(0,"+gheight/2+"px,-"+gheight*2+"px);"
 				// 滑动渐隐向下按钮
