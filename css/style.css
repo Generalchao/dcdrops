@@ -722,8 +722,9 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .bottom_link_btn .back-top{position: absolute;right: 10px;color:#979797; }
 .scroll-nav .logo{font-size: 40px;position: absolute;top: 30px;left: calc(50% - 44px);color: #000;}
 #skill,#work{background:#000 url('https://s2.ax1x.com/2019/12/31/l1FUde.png') no-repeat center/cover;}
-#portfolio{background:#222;}
+#portfolio{background:#17172D;}
 .icon-email,.icon-call{color: var(--main-color);font-size: 40px;}
+#contact{position: relative;}
 .contact img{width: 50px;margin-top: 20px;}
 .contact a{color: #333;}
 
@@ -764,7 +765,6 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .about-detail tr:nth-last-of-type(1) td:before{height: 0;}
 
 #about{padding: 0 20px;}
-#contact{position: relative;}
 
 .col-md-6.about{position: relative}
 .col-md-6.about:before{position: absolute;top: -26px;left: -31px;z-index: -1;width: 45%;height: 90%;content: "";background: url('../img/dots-small.svg');}
