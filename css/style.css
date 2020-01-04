@@ -271,15 +271,8 @@ article{position: relative; float: left; width: 100%;}
 
 .fl{float: left; width:100%;}
 
-
 /*nopadding class*/
 .nopadding {padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0;}
-@media (min-width: 992px) {
-  .nopadding-md{padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0;}
-}
-@media (max-width: 767px) {
-  .nopadding-xs{padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0;}
-}
 
 /*background*/
 .bg-row{background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment:scroll;}
@@ -407,7 +400,7 @@ header .hamburger-menu{top:35px;right: 35px;}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 08 - FOOTER */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-footer{padding: 70px 0 70px;font-weight: 900; font-size: 12px; line-height: 30px;text-align: center;color: #333;margin-top: 60px;position: relative;background-color: #f8f8fb;}
+footer{padding: 70px 0 50px;font-weight: 900; font-size: 12px; line-height: 30px;text-align: center;color: #333;position: relative;background-color: #f8f8fb;}
 footer ul{list-style-type: none;}
 footer ul li{margin-bottom: 5px;}
 footer ul li a{color: #989898}
@@ -577,6 +570,10 @@ transform: translate(0%, -50%);}
 .price-wrapper ul li{margin-bottom: 8px;}
 .price-wrapper ul li:last-child{margin-bottom: 0;}
 .price-wrapper ul li span{ color: #fd39c2; font-weight: 600;}
+
+@media (max-width: 415px){
+  .price-wrapper article{padding:45px 30px;}
+}
 /*公司介绍模块*/
 
 
@@ -767,9 +764,10 @@ i:before{padding: 0 !important;margin: 0 !important;line-height: normal !importa
 .about-detail tr:nth-last-of-type(1) td:before{height: 0;}
 
 #about{padding: 0 20px;}
+#contact{position: relative;}
 
 .col-md-6.about{position: relative}
 .col-md-6.about:before{position: absolute;top: -26px;left: -31px;z-index: -1;width: 45%;height: 90%;content: "";background: url('../img/dots-small.svg');}
-
+.footer-waves{position: absolute;bottom: -1px;width: 100%;left: 0;z-index: 10;}
 
 
